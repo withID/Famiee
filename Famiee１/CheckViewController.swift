@@ -21,10 +21,8 @@ class CheckViewController: UIViewController {
         nameLabel.text = name
         ChikaiLabel.text = Chikai
     }
-    
-//
-//    @IBAction func back(_ sender: Any) {
-//        self.dismiss(animated: true, completion: nil)
-//    }
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
 }

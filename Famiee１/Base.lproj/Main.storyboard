@@ -339,6 +339,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="戻る" backgroundImage="発行する.png"/>
+                                        <connections>
+                                            <action selector="back:" destination="bb1-wy-0AG" eventType="touchUpInside" id="4aC-zi-ukK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-A0-HbF">
                                         <rect key="frame" x="354" y="674" width="290" height="120"/>
@@ -369,6 +372,7 @@
         <!--Check2 View Controller-->
         <scene sceneID="dda-0q-vnI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4x-1v-oHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="toCheck2VC" id="BW8-PB-kR5" customClass="Check2ViewController" customModule="Famiee_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="76Z-Ti-QT0">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -440,6 +444,9 @@
                                         <state key="normal" title="戻る" backgroundImage="長方形 23.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="back2:" destination="BW8-PB-kR5" eventType="touchUpInside" id="dPc-Md-BHN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuH-X2-vnI">
                                         <rect key="frame" x="343" y="673" width="290" height="120"/>
@@ -465,7 +472,6 @@
                         <outlet property="nameLabel3" destination="dZE-sQ-Lmr" id="b7x-Fa-yUy"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N4x-1v-oHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5212.5" y="131.8359375"/>
         </scene>
@@ -516,7 +522,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="h9V-WP-L2M"/>
                     <connections>
-                        <outlet property="box" destination="Uaa-7C-KXP" id="vpX-ND-LbP"/>
+                        <outlet property="box" destination="Uaa-7C-KXP" id="629-3z-XEy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3o-OW-xdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -894,7 +900,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7054.6875" y="270.703125"/>
+            <point key="canvasLocation" x="7099" y="301"/>
         </scene>
         <!--Chikai2 View Controller-->
         <scene sceneID="eUt-eB-S0e">
@@ -989,6 +995,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loI-xP-nEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4380" y="132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zUh-n0-8TL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajC-nx-UGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Edj-Al-aLT" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="pvP-Fc-jQn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1550"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-Fj-2Ah">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1530"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jyx-OH-XJq"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" id="xpG-2B-q5h"/>
+                    <size key="freeformSize" width="768" height="1550"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="8003.90625" y="285.9375"/>
         </scene>
     </scenes>
     <resources>

@@ -21,19 +21,9 @@ class Check2ViewController: UIViewController {
 
         nameLabel3.text = name2
         ChikaiLabel3.text = chikai2
-        
-        
+    }
+    @IBAction func back2(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
