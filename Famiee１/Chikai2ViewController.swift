@@ -47,9 +47,9 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate {
         let Check2ViewController = self.storyboard?.instantiateViewController(withIdentifier: "toCheck2VC") as! Check2ViewController
         self.navigationController?.pushViewController(Check2ViewController, animated: true)
         //遷移先のBox変数に、このコードないの変数Stringを代入する
-        
         Check2ViewController.name2 = nameText2.text!
         Check2ViewController.chikai2 = ChikaiText2.text!
+
     }
     
     
