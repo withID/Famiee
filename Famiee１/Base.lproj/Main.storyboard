@@ -230,7 +230,6 @@
                         <outlet property="nextButton" destination="FpB-F4-wfF" id="yFa-AR-g1r"/>
                         <outlet property="vowText" destination="Wsk-4f-o9a" id="DbP-aW-gjT"/>
                         <outlet property="vowView" destination="xzl-0I-dcN" id="bNl-wn-mLo"/>
-                        <outlet property="vowtext" destination="Wsk-4f-o9a" id="aqR-m6-74w"/>
                         <segue destination="bb1-wy-0AG" kind="push" id="rAJ-jx-TBi"/>
                     </connections>
                 </viewController>
