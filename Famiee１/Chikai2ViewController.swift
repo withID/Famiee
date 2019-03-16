@@ -18,6 +18,10 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //遷移先Viewの左上のbackを消す
+        let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = myBackButton
+        
         nameText2.delegate = self
         ChikaiText2.delegate = self
         
@@ -49,9 +53,17 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate {
         //遷移先のBox変数に、このコードないの変数Stringを代入する
         Check2ViewController.name2 = nameText2.text!
         Check2ViewController.chikai2 = ChikaiText2.text!
-
+        
+        UserDefaults.standard.set(nameText2.text, forKey: "Name2Text")
+        UserDefaults.standard.set(ChikaiText2.text, forKey: "Message2")
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // ナビゲーションを透明にする処理
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+    }
     
     
 }

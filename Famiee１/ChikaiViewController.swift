@@ -17,10 +17,13 @@ class ChikaiViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet var vowText: UITextField!
     
     @IBOutlet var nextButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //遷移先Viewの左上のbackを消す
+        let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = myBackButton
+        
         BoardView.layer.cornerRadius = 40
         nameText.layer.cornerRadius = 40
         vowText.layer.cornerRadius = 40
@@ -65,9 +68,16 @@ class ChikaiViewController: UIViewController,UITextFieldDelegate{
         
         CheckViewController.name = nameText.text!
         CheckViewController.Chikai = vowText.text!
- 
+        UserDefaults.standard.set(nameText.text, forKey: "Name")
+        UserDefaults.standard.set(vowText.text, forKey: "Message")
     }
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // ナビゲーションを透明にする処理
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+    }
+
     
 }

@@ -13,8 +13,18 @@ class HakkouViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //遷移先Viewの左上のbackを消す
+        let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = myBackButton
+        
         box.layer.cornerRadius = 40
         
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // ナビゲーションを透明にする処理
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+    }
 }
