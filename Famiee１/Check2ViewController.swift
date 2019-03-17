@@ -11,7 +11,9 @@ import UIKit
 class Check2ViewController: UIViewController {
 
     @IBOutlet var nameLabel3: UILabel!
-    @IBOutlet var ChikaiLabel3: UILabel!
+    @IBOutlet var ChikaiLabel3: UITextView!
+    
+    @IBOutlet var Texts: UILabel!
     
     var name2 = String()
     var chikai2 = String()
@@ -24,10 +26,13 @@ class Check2ViewController: UIViewController {
         
         nameLabel3.text = name2
         ChikaiLabel3.text = chikai2
+        Texts.textColor = UIColor.white
     }
     @IBAction func back2(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

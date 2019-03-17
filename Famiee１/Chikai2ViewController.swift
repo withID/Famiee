@@ -8,12 +8,12 @@
 
 import UIKit
 
-class Chikai2ViewController: UIViewController,UITextFieldDelegate {
+class Chikai2ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
     @IBOutlet var board2: UIView!
     @IBOutlet var nameView2: UIView!
     @IBOutlet var ChikaiView2: UIView!
     @IBOutlet var nameText2: UITextField!
-    @IBOutlet var ChikaiText2: UITextField!
+    @IBOutlet var ChikaiText2: UITextView!
     @IBOutlet var nextButton2: UIButton!
     
     override func viewDidLoad() {
@@ -21,6 +21,8 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate {
         //遷移先Viewの左上のbackを消す
         let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = myBackButton
+        
+        ChikaiText2.font = UIFont.systemFont(ofSize: 21)
         
         nameText2.delegate = self
         ChikaiText2.delegate = self
@@ -33,7 +35,6 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate {
         nameText2.returnKeyType = .done
         nameText2.clearButtonMode = .always
         ChikaiText2.returnKeyType = .done
-        ChikaiText2.clearButtonMode = .always
         
         nameText2.delegate = self
         ChikaiText2.delegate = self

@@ -10,7 +10,10 @@ import UIKit
 
 class CheckViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var ChikaiLabel: UILabel!
+    @IBOutlet var ChikaiLabel: UITextView!
+    @IBOutlet var Borad: UIView!
+    @IBOutlet var Texts: UILabel!
+    
     
     var Chikai = String()
     var name = String()
@@ -21,17 +24,13 @@ class CheckViewController: UIViewController {
         let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = myBackButton
         
+        Borad.layer.cornerRadius = 40
         nameLabel.text = name
         ChikaiLabel.text = Chikai
+        
+        Texts.textColor = UIColor.white
     }
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // ナビゲーションを透明にする処理
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
     }
 }
