@@ -12,7 +12,6 @@ class CheckViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var ChikaiLabel: UITextView!
     @IBOutlet var Borad: UIView!
-    @IBOutlet var Texts: UILabel!
     
     
     var Chikai = String()
@@ -28,7 +27,6 @@ class CheckViewController: UIViewController {
         nameLabel.text = name
         ChikaiLabel.text = Chikai
         
-        Texts.textColor = UIColor.white
     }
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

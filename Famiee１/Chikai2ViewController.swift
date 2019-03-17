@@ -15,7 +15,8 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate,UITextViewDele
     @IBOutlet var nameText2: UITextField!
     @IBOutlet var ChikaiText2: UITextView!
     @IBOutlet var nextButton2: UIButton!
-    
+    @IBOutlet var checkedBtn: UIButton!
+    var isChecked = false
     override func viewDidLoad() {
         super.viewDidLoad()
         //遷移先Viewの左上のbackを消す
@@ -49,22 +50,40 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate,UITextViewDele
         ChikaiText2.resignFirstResponder()
     }
     @IBAction func next2(_ sender: Any) {
-        let Check2ViewController = self.storyboard?.instantiateViewController(withIdentifier: "toCheck2VC") as! Check2ViewController
-        self.navigationController?.pushViewController(Check2ViewController, animated: true)
-        //遷移先のBox変数に、このコードないの変数Stringを代入する
-        Check2ViewController.name2 = nameText2.text!
-        Check2ViewController.chikai2 = ChikaiText2.text!
+        
+        if isChecked == false {
+            
+            let Check2ViewController = self.storyboard?.instantiateViewController(withIdentifier: "toCheck2VC") as! Check2ViewController
+            self.navigationController?.pushViewController(Check2ViewController, animated: true)
+            //遷移先のBox変数に、このコードないの変数Stringを代入する
+            Check2ViewController.name2 = nameText2.text!
+            Check2ViewController.chikai2 = ChikaiText2.text!
+        }else{
+            
+            let Check2ViewController = self.storyboard?.instantiateViewController(withIdentifier: "toCheck2CVC") as! Check2ViewController
+            self.navigationController?.pushViewController(Check2ViewController, animated: true)
+            //遷移先のBox変数に、このコードないの変数Stringを代入する
+            Check2ViewController.name2 = nameText2.text!
+            Check2ViewController.chikai2 = ChikaiText2.text!
+        }
+        
         
         UserDefaults.standard.set(nameText2.text, forKey: "Name2Text")
         UserDefaults.standard.set(ChikaiText2.text, forKey: "Message2")
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // ナビゲーションを透明にする処理
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
-    }
     
+    @IBAction func checkView(_ sender: Any) {
+        
+        let checkoff = UIImage(named: "checkoff.jpg")
+        let checkon = UIImage(named: "checkon.jpg")
+        if isChecked == false{
+            checkedBtn.setImage(checkon, for: .normal)
+        }
+        else{
+            checkedBtn.setImage(checkoff, for: .normal)
+        }
+        print(isChecked)
+        isChecked = !isChecked
+    }
     
 }

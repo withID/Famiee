@@ -351,45 +351,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAk-bq-btp">
-                                <rect key="frame" x="140" y="647" width="532" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="プライバシーポリシー  ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="登録された内容が、">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="system" size="22"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ブロックチェーン上に記録されることを承認します。">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-A0-HbF">
                                 <rect key="frame" x="409" y="816" width="240" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -424,6 +385,49 @@ Cg
                                     <action selector="back:" destination="bb1-wy-0AG" eventType="touchUpInside" id="4aC-zi-ukK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAk-bq-btp">
+                                <rect key="frame" x="140" y="647" width="532" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="プライバシーポリシー  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSOriginalFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="登録された内容が、">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSOriginalFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="22"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="22"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ブロックチェーン上に記録されることを承認します。">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSOriginalFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ga6-8g-3yX"/>
@@ -432,7 +436,6 @@ Cg
                     <connections>
                         <outlet property="Borad" destination="dGs-HQ-ds6" id="uLE-lk-z9H"/>
                         <outlet property="ChikaiLabel" destination="22e-ft-jGJ" id="IPT-eK-ae4"/>
-                        <outlet property="Texts" destination="oAk-bq-btp" id="pLQ-V5-DOL"/>
                         <outlet property="nameLabel" destination="UEP-iz-yAP" id="pKw-Bl-jTK"/>
                     </connections>
                 </viewController>
@@ -590,7 +593,6 @@ Cg
                     <navigationItem key="navigationItem" id="R2y-ad-DRM"/>
                     <connections>
                         <outlet property="ChikaiLabel3" destination="NqV-GE-PRz" id="D2s-ri-7en"/>
-                        <outlet property="Texts" destination="d8v-ZC-7VP" id="MVv-pM-yIY"/>
                         <outlet property="nameLabel3" destination="1JT-kR-yxX" id="vJU-BV-kFk"/>
                     </connections>
                 </viewController>
@@ -917,24 +919,16 @@ Cg
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7G-sh-FgQ">
                                         <rect key="frame" x="0.0" y="-70" width="768" height="1600"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1530" id="Kej-Nv-oKt"/>
-                                            <constraint firstAttribute="width" constant="834" id="upg-89-SrB"/>
-                                        </constraints>
                                     </imageView>
-                                    <view alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBZ-l3-hsG">
-                                        <rect key="frame" x="47" y="315" width="674" height="237"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Famiee.png" translatesAutoresizingMaskIntoConstraints="NO" id="ztb-3M-VaC">
-                                        <rect key="frame" x="184" y="80" width="400" height="195"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Famiee.png" translatesAutoresizingMaskIntoConstraints="NO" id="ztb-3M-VaC">
+                                        <rect key="frame" x="184" y="63" width="400" height="195"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="400" id="J0q-6S-bGU"/>
                                             <constraint firstAttribute="height" constant="195" id="osl-iK-QLg"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="カップル証明書" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECF-gt-Iq8">
-                                        <rect key="frame" x="91" y="630" width="585" height="66"/>
+                                        <rect key="frame" x="91" y="534" width="585" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="PEB-Tl-Dom"/>
                                         </constraints>
@@ -987,20 +981,23 @@ Cg
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qp1-Do-iu3">
-                                        <rect key="frame" x="47" y="627" width="674" height="623"/>
+                                    <view alpha="0.34999999403953552" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qp1-Do-iu3">
+                                        <rect key="frame" x="47" y="632" width="674" height="623"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rs-31-1T0">
-                                        <rect key="frame" x="179" y="1326" width="410" height="120"/>
+                                        <rect key="frame" x="179" y="1396" width="410" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="LUW-lw-1OL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="印刷する" backgroundImage="発行する.png"/>
+                                        <state key="normal" title="印刷する" backgroundImage="LargeRed.png"/>
+                                        <connections>
+                                            <segue destination="GXl-DV-ufy" kind="show" id="GJJ-Nh-KUA"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="おめでとうございます。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFn-Cd-mqO">
-                                        <rect key="frame" x="91" y="330" width="585" height="67"/>
+                                        <rect key="frame" x="91" y="265" width="585" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67" id="Tvo-3r-Jfp"/>
                                         </constraints>
@@ -1009,7 +1006,7 @@ Cg
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZZ-gC-o3H">
-                                        <rect key="frame" x="91" y="400" width="585" height="154"/>
+                                        <rect key="frame" x="91" y="335" width="585" height="154"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="154" id="lSN-DT-TE4"/>
                                         </constraints>
@@ -1020,70 +1017,54 @@ Cg
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view alpha="0.34999999403953552" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBZ-l3-hsG">
+                                        <rect key="frame" x="47" y="265" width="674" height="237"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Z7G-sh-FgQ" secondAttribute="bottom" id="06F-pI-I7w"/>
                                     <constraint firstItem="5V7-dd-cEL" firstAttribute="leading" secondItem="20q-Ux-rw2" secondAttribute="leading" id="0gx-gQ-XqO"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="31C-TJ-Zpe"/>
                                     <constraint firstItem="20q-Ux-rw2" firstAttribute="leading" secondItem="pEf-lH-Rgv" secondAttribute="leading" id="3oD-1i-QoW"/>
                                     <constraint firstItem="4rs-31-1T0" firstAttribute="top" secondItem="bpm-er-rPL" secondAttribute="bottom" constant="92" id="4RG-Ui-JSR"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leadingMargin" id="7de-ZU-iCQ"/>
                                     <constraint firstItem="ztb-3M-VaC" firstAttribute="centerX" secondItem="bFn-Cd-mqO" secondAttribute="centerX" id="7eB-nv-Etl"/>
-                                    <constraint firstItem="qp1-Do-iu3" firstAttribute="top" secondItem="jZZ-gC-o3H" secondAttribute="bottom" constant="73" id="8B3-HU-FPk"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="8s7-no-Nl2"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="9HV-z1-ubZ"/>
-                                    <constraint firstItem="4rs-31-1T0" firstAttribute="top" secondItem="qp1-Do-iu3" secondAttribute="bottom" constant="76" id="9O7-OA-Oyx"/>
+                                    <constraint firstItem="qp1-Do-iu3" firstAttribute="top" secondItem="jZZ-gC-o3H" secondAttribute="bottom" constant="143" id="8B3-HU-FPk"/>
+                                    <constraint firstItem="4rs-31-1T0" firstAttribute="top" secondItem="qp1-Do-iu3" secondAttribute="bottom" constant="141" id="9O7-OA-Oyx"/>
                                     <constraint firstItem="bFn-Cd-mqO" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" constant="91" id="9XD-3p-RKv"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="topMargin" id="AI3-pQ-1RW"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="Ak7-50-aNz"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="CAu-xC-FSd"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="CUD-yr-eLG"/>
                                     <constraint firstItem="bFn-Cd-mqO" firstAttribute="trailing" secondItem="jZZ-gC-o3H" secondAttribute="trailing" id="DEN-bG-xWW"/>
                                     <constraint firstItem="20q-Ux-rw2" firstAttribute="trailing" secondItem="pEf-lH-Rgv" secondAttribute="trailing" id="DwB-af-J9h"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="trailing" secondItem="qp1-Do-iu3" secondAttribute="trailing" id="Eij-Ir-au0"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="G2x-1n-4on"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" id="HgW-M3-ama"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leadingMargin" id="IVe-WR-y8D"/>
-                                    <constraint firstAttribute="bottom" secondItem="Z7G-sh-FgQ" secondAttribute="bottom" id="Iec-80-fCR"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="JXZ-JA-Nnt"/>
                                     <constraint firstItem="ECF-gt-Iq8" firstAttribute="leading" secondItem="84u-OO-Acy" secondAttribute="leading" id="Jue-Ye-Sj7"/>
                                     <constraint firstItem="bpm-er-rPL" firstAttribute="top" secondItem="pEf-lH-Rgv" secondAttribute="bottom" constant="26" id="Koh-Y5-rrV"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="centerX" secondItem="bFn-Cd-mqO" secondAttribute="centerX" id="Kvd-2N-Lcl"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="MRc-YA-pyA"/>
+                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="L9m-4F-xxT"/>
+                                    <constraint firstItem="ztb-3M-VaC" firstAttribute="centerX" secondItem="Z7G-sh-FgQ" secondAttribute="centerX" id="LFS-fF-rlI"/>
+                                    <constraint firstAttribute="trailing" secondItem="UBZ-l3-hsG" secondAttribute="trailing" constant="47" id="M7R-i8-TVl"/>
                                     <constraint firstItem="jZZ-gC-o3H" firstAttribute="top" secondItem="bFn-Cd-mqO" secondAttribute="bottom" constant="3" id="Msp-zs-Aka"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="leading" secondItem="qp1-Do-iu3" secondAttribute="leading" id="O5C-GD-rpW"/>
                                     <constraint firstItem="84u-OO-Acy" firstAttribute="trailing" secondItem="5V7-dd-cEL" secondAttribute="trailing" id="PKf-vR-hwJ"/>
-                                    <constraint firstItem="qp1-Do-iu3" firstAttribute="top" secondItem="UBZ-l3-hsG" secondAttribute="bottom" constant="75" id="QPG-zH-3d7"/>
+                                    <constraint firstItem="qp1-Do-iu3" firstAttribute="top" secondItem="UBZ-l3-hsG" secondAttribute="bottom" constant="130" id="QPG-zH-3d7"/>
                                     <constraint firstItem="pEf-lH-Rgv" firstAttribute="leading" secondItem="bpm-er-rPL" secondAttribute="leading" id="SUy-kX-Y3T"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" id="Sjg-VB-dIJ"/>
-                                    <constraint firstItem="84u-OO-Acy" firstAttribute="top" secondItem="ECF-gt-Iq8" secondAttribute="bottom" constant="4" id="SlS-t6-dEn"/>
+                                    <constraint firstItem="84u-OO-Acy" firstAttribute="top" secondItem="ECF-gt-Iq8" secondAttribute="bottom" constant="100" id="SlS-t6-dEn"/>
                                     <constraint firstItem="bpm-er-rPL" firstAttribute="centerX" secondItem="4rs-31-1T0" secondAttribute="centerX" id="Tw7-TG-9A9"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" id="V0J-8l-84R"/>
+                                    <constraint firstItem="ztb-3M-VaC" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" constant="133" id="V86-eg-AQ8"/>
                                     <constraint firstItem="jZZ-gC-o3H" firstAttribute="trailing" secondItem="ECF-gt-Iq8" secondAttribute="trailing" id="Vl6-j9-Vgq"/>
                                     <constraint firstItem="5V7-dd-cEL" firstAttribute="trailing" secondItem="20q-Ux-rw2" secondAttribute="trailing" id="X9Y-Gq-oyM"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="ZFt-yd-r6x"/>
                                     <constraint firstItem="5V7-dd-cEL" firstAttribute="top" secondItem="84u-OO-Acy" secondAttribute="bottom" constant="4" id="ZJX-Uy-hvT"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="Zig-an-JBB"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" constant="47" id="d5J-k7-iSS"/>
                                     <constraint firstItem="20q-Ux-rw2" firstAttribute="top" secondItem="5V7-dd-cEL" secondAttribute="bottom" constant="6" id="fD5-HX-Soa"/>
-                                    <constraint firstItem="bFn-Cd-mqO" firstAttribute="top" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="55" id="ftw-jf-hZe"/>
+                                    <constraint firstItem="bFn-Cd-mqO" firstAttribute="top" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="7" id="ftw-jf-hZe"/>
                                     <constraint firstItem="84u-OO-Acy" firstAttribute="leading" secondItem="5V7-dd-cEL" secondAttribute="leading" id="gGQ-1c-gdv"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="gtG-Q9-RWk"/>
                                     <constraint firstItem="ECF-gt-Iq8" firstAttribute="trailing" secondItem="84u-OO-Acy" secondAttribute="trailing" id="htD-K1-V4r"/>
                                     <constraint firstItem="ztb-3M-VaC" firstAttribute="centerX" secondItem="kyJ-uR-IvC" secondAttribute="centerX" id="i5T-9h-YkZ"/>
                                     <constraint firstItem="bFn-Cd-mqO" firstAttribute="leading" secondItem="jZZ-gC-o3H" secondAttribute="leading" id="kmB-RM-h9F"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="lLe-BA-6cL"/>
-                                    <constraint firstItem="ECF-gt-Iq8" firstAttribute="top" secondItem="jZZ-gC-o3H" secondAttribute="bottom" constant="76" id="lRq-vt-ptL"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="topMargin" id="lfg-Xi-r38"/>
+                                    <constraint firstItem="ECF-gt-Iq8" firstAttribute="top" secondItem="jZZ-gC-o3H" secondAttribute="bottom" constant="45" id="lRq-vt-ptL"/>
                                     <constraint firstItem="pEf-lH-Rgv" firstAttribute="trailing" secondItem="bpm-er-rPL" secondAttribute="trailing" id="m7q-sx-yn8"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z7G-sh-FgQ" secondAttribute="trailing" id="mnc-Im-VPy"/>
                                     <constraint firstItem="pEf-lH-Rgv" firstAttribute="top" secondItem="20q-Ux-rw2" secondAttribute="bottom" constant="16" id="nCh-lL-qD6"/>
                                     <constraint firstItem="jZZ-gC-o3H" firstAttribute="leading" secondItem="ECF-gt-Iq8" secondAttribute="leading" id="sRh-3K-p0J"/>
+                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" id="tmR-Hc-3yx"/>
                                     <constraint firstAttribute="bottom" secondItem="4rs-31-1T0" secondAttribute="bottom" constant="84" id="u7A-lh-wsB"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" id="ugY-Su-JhF"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" id="usj-G5-5in"/>
-                                    <constraint firstItem="Z7G-sh-FgQ" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" id="vbd-D0-ZR6"/>
-                                    <constraint firstItem="UBZ-l3-hsG" firstAttribute="top" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="40" id="wA2-pX-Uau"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="Z7G-sh-FgQ" secondAttribute="bottom" id="x1t-Z8-4Bz"/>
+                                    <constraint firstItem="UBZ-l3-hsG" firstAttribute="top" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="7" id="wA2-pX-Uau"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1131,19 +1112,13 @@ Cg
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEQ-RB-5Uw">
-                                <rect key="frame" x="187" y="830" width="381" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暗号化して他の人に内容を読まれないようにする。(任意)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmQ-gv-dvW">
+                                <rect key="frame" x="140" y="745" width="463" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="40"/>
-                                <state key="normal" title="次へ" backgroundImage="LargeBtn(p).png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="next2:" destination="8l6-Rt-FLr" eventType="touchUpInside" id="dZo-nD-kVU"/>
-                                    <action selector="next:" destination="4qP-Ea-ndN" eventType="touchUpInside" id="890-AY-ZMC"/>
-                                    <action selector="next:" destination="MKt-vJ-Pl5" eventType="touchUpInside" id="v4n-W9-zjw"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="誓いの言葉(パートナーの方との約束)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3k-7W-I7I">
                                 <rect key="frame" x="137" y="381" width="444" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1163,6 +1138,15 @@ Cg
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKt-Cc-nNG">
+                                <rect key="frame" x="100" y="750" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="checkoff.jpg"/>
+                                <connections>
+                                    <action selector="checkView:" destination="4qP-Ea-ndN" eventType="touchUpInside" id="Igp-bE-yFo"/>
+                                    <action selector="checkView:" destination="8l6-Rt-FLr" eventType="touchUpInside" id="LkM-HO-o4e"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お一人目の方が入力します" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJt-4c-wvC">
                                 <rect key="frame" x="134" y="101" width="500" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1170,6 +1154,19 @@ Cg
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEQ-RB-5Uw">
+                                <rect key="frame" x="187" y="830" width="381" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="40"/>
+                                <state key="normal" title="次へ" backgroundImage="LargeBtn(p).png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="next2:" destination="8l6-Rt-FLr" eventType="touchUpInside" id="dZo-nD-kVU"/>
+                                    <action selector="next:" destination="4qP-Ea-ndN" eventType="touchUpInside" id="890-AY-ZMC"/>
+                                    <action selector="next:" destination="MKt-vJ-Pl5" eventType="touchUpInside" id="v4n-W9-zjw"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="匿名をご希望の方は、イニシャルでも構いません。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-2q-gtW">
                                 <rect key="frame" x="151" y="242" width="455" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1201,10 +1198,12 @@ Cg
                         <outlet property="ChikaiText2" destination="iod-b3-AdL" id="LRC-20-WAo"/>
                         <outlet property="ChikaiView2" destination="SO8-rS-lAo" id="gPO-cv-VV2"/>
                         <outlet property="board2" destination="ejT-63-xox" id="zdS-go-0gk"/>
+                        <outlet property="checkedBtn" destination="TKt-Cc-nNG" id="dHz-YX-1h9"/>
                         <outlet property="nameText2" destination="Z8M-2q-gtW" id="xNb-ag-dXq"/>
                         <outlet property="nameView2" destination="fFh-pS-5ev" id="qJN-s2-P3T"/>
                         <outlet property="nextButton2" destination="QEQ-RB-5Uw" id="jLz-tc-RGV"/>
                         <segue destination="BW8-PB-kR5" kind="push" id="TcC-mU-2FS"/>
+                        <segue destination="ohF-gS-Qu0" kind="push" id="Pij-f4-7cU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loI-xP-nEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1286,7 +1285,7 @@ Cg
                                 <attributedString key="attributedText">
                                     <fragment content="プライバシーポリシー  ">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
@@ -1294,7 +1293,7 @@ Cg
                                     </fragment>
                                     <fragment content="登録された内容が、暗号化して">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1304,14 +1303,14 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" metaFont="system" size="22"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="ブロックチェーン上に記録されることを承認します。">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1368,6 +1367,163 @@ Cg
             </objects>
             <point key="canvasLocation" x="3448" y="908"/>
         </scene>
+        <!--Check2 View Controller-->
+        <scene sceneID="GEg-kk-ulD">
+            <objects>
+                <viewController storyboardIdentifier="toCheck2CVC" id="ohF-gS-Qu0" customClass="Check2ViewController" customModule="Famiee_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ku2-Ne-MQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgraund1.png" translatesAutoresizingMaskIntoConstraints="NO" id="tTT-U5-0kV">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDa-bq-daS">
+                                <rect key="frame" x="140" y="200" width="120" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="お名前">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="25" name="HiraginoSans-W3"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999403953552" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ku5-kM-Vus">
+                                <rect key="frame" x="47" y="77" width="674" height="870"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LL-kf-kLe">
+                                        <rect key="frame" x="97" y="164" width="490" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3O7-6f-JyV">
+                                        <rect key="frame" x="97" y="304" width="490" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWb-8a-NrM">
+                                <rect key="frame" x="409" y="816" width="240" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="smallBtn(p).png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="同意する">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="40" name="HiraginoSans-W3"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="zfs-c5-c7f" kind="push" id="udy-Ng-yWb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BR-qI-7YZ">
+                                <rect key="frame" x="119" y="816" width="240" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="smallBtn(p).png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="戻る">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="40" name="HiraginoSans-W3"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="back2:" destination="ohF-gS-Qu0" eventType="touchUpInside" id="dmT-rY-tb0"/>
+                                    <action selector="back:" destination="bb1-wy-0AG" eventType="touchUpInside" id="97Y-KV-GqH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDv-ZD-xpI">
+                                <rect key="frame" x="140" y="318" width="397" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="誓いの言葉(パートナーの方の約束)">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="25" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="入力内容の同意" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhV-51-gFs">
+                                <rect key="frame" x="81" y="100" width="600" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prv-Nx-PcK">
+                                <rect key="frame" x="140" y="647" width="532" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="プライバシーポリシー  ">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="登録された内容が、暗号化されて">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="22"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ブロックチェーン上に記録されることを承認します。">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="22" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Tkw-eN-0gd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pfs-v4-7Kg"/>
+                    <connections>
+                        <outlet property="ChikaiLabel3" destination="3O7-6f-JyV" id="roA-e8-tzQ"/>
+                        <outlet property="nameLabel3" destination="0LL-kf-kLe" id="fx7-EQ-siz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDz-KN-xUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5213" y="861"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Famiee.png" width="444" height="238"/>
@@ -1382,6 +1538,7 @@ Cg
         <image name="発行する.png" width="410" height="87"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vDe-7N-cI0"/>
+        <segue reference="u3p-J6-Bav"/>
+        <segue reference="udy-Ng-yWb"/>
     </inferredMetricsTieBreakers>
 </document>
