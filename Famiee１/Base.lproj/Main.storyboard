@@ -263,20 +263,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-ix-W08">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U41-k8-h09">
+                                <rect key="frame" x="369" y="904" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1j-Va-i2C">
-                                <rect key="frame" x="47" y="77" width="674" height="870"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <connections>
+                                    <action selector="cameraButton_TouchUpInside:" destination="T9b-er-4Kc" eventType="touchUpInside" id="cKN-L1-eBt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IeA-q5-jxX"/>
                     </view>
                     <navigationItem key="navigationItem" id="qiZ-Vs-4jO"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="U41-k8-h09" id="sDz-H7-Tq8"/>
+                        <segue destination="zqB-Bt-tqK" kind="push" id="Xqv-x8-75g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oss-bO-Z1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -652,10 +654,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="6141.40625" y="131.8359375"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Ckeck Image View Controller-->
         <scene sceneID="78f-Vc-EsV">
             <objects>
-                <viewController id="zqB-Bt-tqK" customClass="NextViewController" customModule="Famiee_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageVC" id="zqB-Bt-tqK" customClass="ckeckImageViewController" customModule="Famiee_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sUg-RC-R3Y">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -664,20 +666,34 @@ Cg
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-sS-RVN">
-                                <rect key="frame" x="47" y="77" width="674" height="870"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bD3-fT-Jjh">
+                                <rect key="frame" x="58" y="82" width="652" height="860"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwr-Lq-Z0d">
+                                <rect key="frame" x="179" y="812" width="410" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="40"/>
+                                <state key="normal" title="この写真を使う" backgroundImage="largeBtn(r).png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="4qP-Ea-ndN" eventType="touchUpInside" id="Awg-lZ-WVg"/>
+                                    <action selector="next:" destination="MKt-vJ-Pl5" eventType="touchUpInside" id="NsY-RC-wHI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bic-uS-riX"/>
                     </view>
                     <navigationItem key="navigationItem" id="jf4-Co-TAe"/>
+                    <connections>
+                        <outlet property="Image" destination="bD3-fT-Jjh" id="0SC-5D-jFq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btM-bP-BYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3448" y="-745"/>
+            <point key="canvasLocation" x="3447.65625" y="-745.3125"/>
         </scene>
         <!--Chikai View Controller-->
         <scene sceneID="vFM-n6-goi">

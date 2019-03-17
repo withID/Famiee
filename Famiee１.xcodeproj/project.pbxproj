@@ -24,6 +24,7 @@
 		6DC1A9DF22390A9D008D8283 /* 長方形 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC1A9DC22390A9D008D8283 /* 長方形 20.png */; };
 		6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF705012237ECD100FA8FE7 /* CheckViewController.swift */; };
 		6DFC2523223B973E00C65113 /* camaraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC2522223B973E00C65113 /* camaraViewController.swift */; };
+		F7024D3E223E4CD2006C1869 /* ckeckImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */; };
 		F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B02223E26ED00E92297 /* SmallBtn(r).png */; };
 		F7A95B05223E278500E92297 /* largeBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B04223E278500E92297 /* largeBtn(r).png */; };
 		F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B06223E2A8800E92297 /* LargeBtn(p).png */; };
@@ -55,6 +56,7 @@
 		6DC1A9DC22390A9D008D8283 /* 長方形 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "長方形 20.png"; sourceTree = "<group>"; };
 		6DF705012237ECD100FA8FE7 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		6DFC2522223B973E00C65113 /* camaraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camaraViewController.swift; sourceTree = "<group>"; };
+		F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ckeckImageViewController.swift; sourceTree = "<group>"; };
 		F7A95B02223E26ED00E92297 /* SmallBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SmallBtn(r).png"; sourceTree = "<group>"; };
 		F7A95B04223E278500E92297 /* largeBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "largeBtn(r).png"; sourceTree = "<group>"; };
 		F7A95B06223E2A8800E92297 /* LargeBtn(p).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LargeBtn(p).png"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				F7A95B0F223E339F00E92297 /* checkon.jpg */,
 				6DC1A9D82239090B008D8283 /* UIcolor.swift */,
 				6D18FD412237B76E00F68DA4 /* AppDelegate.swift */,
+				F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */,
 				6D18FD432237B76E00F68DA4 /* ViewController.swift */,
 				6D18FD5B2237BF0100F68DA4 /* ChikaiViewController.swift */,
 				6DF705012237ECD100FA8FE7 /* CheckViewController.swift */,
@@ -214,6 +217,7 @@
 				6D246EB0223A796F00004C7E /* Chikai2ViewController.swift in Sources */,
 				6D18FD442237B76E00F68DA4 /* ViewController.swift in Sources */,
 				6D776B4922391C1200A73D30 /* Check2ViewController.swift in Sources */,
+				F7024D3E223E4CD2006C1869 /* ckeckImageViewController.swift in Sources */,
 				F7A95B0D223E311B00E92297 /* CheckBox.swift in Sources */,
 				6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */,
 				6D18FD5C2237BF0100F68DA4 /* ChikaiViewController.swift in Sources */,
