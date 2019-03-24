@@ -19,7 +19,7 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
     
     @IBOutlet var nextButton: UIButton!
     
-    var isChecked = false
+    var isChecked = true
 
     override func viewDidLoad() {
         super.viewDidLoad()

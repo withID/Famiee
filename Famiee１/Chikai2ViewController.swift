@@ -16,7 +16,7 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate,UITextViewDele
     @IBOutlet var ChikaiText2: UITextView!
     @IBOutlet var nextButton2: UIButton!
     @IBOutlet var checkedBtn: UIButton!
-    var isChecked = false
+    var isChecked = true
     override func viewDidLoad() {
         super.viewDidLoad()
         //遷移先Viewの左上のbackを消す

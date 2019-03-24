@@ -1,0 +1,20 @@
+PODS:
+  - ACEDrawingView (2.2.1)
+  - lottie-ios (2.5.2)
+
+DEPENDENCIES:
+  - ACEDrawingView
+  - lottie-ios
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ACEDrawingView
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  ACEDrawingView: fa6e8461682a54db3ac65151474fc77ef7e54fd2
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+
+PODFILE CHECKSUM: 8013ce818061d6b915c788f80b61e314c75d1774
+
+COCOAPODS: 1.5.3

@@ -25,6 +25,10 @@
 		6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF705012237ECD100FA8FE7 /* CheckViewController.swift */; };
 		6DFC2523223B973E00C65113 /* camaraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC2522223B973E00C65113 /* camaraViewController.swift */; };
 		F7024D3E223E4CD2006C1869 /* ckeckImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */; };
+		F743978110051985A24A775A /* Pods_Famiee_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */; };
+		F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74608062246211C009F95BC /* Signature2ViewController.swift */; };
+		F746080922462792009F95BC /* SignedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746080822462792009F95BC /* SignedViewController.swift */; };
+		F78B643F22460E790038D132 /* cer.png in Resources */ = {isa = PBXBuildFile; fileRef = F78B643E22460E780038D132 /* cer.png */; };
 		F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B02223E26ED00E92297 /* SmallBtn(r).png */; };
 		F7A95B05223E278500E92297 /* largeBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B04223E278500E92297 /* largeBtn(r).png */; };
 		F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B06223E2A8800E92297 /* LargeBtn(p).png */; };
@@ -34,9 +38,16 @@
 		F7A95B10223E339F00E92297 /* checkoff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B0E223E339F00E92297 /* checkoff.jpg */; };
 		F7A95B11223E339F00E92297 /* checkon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B0F223E339F00E92297 /* checkon.jpg */; };
 		F7A95B13223E414500E92297 /* PrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A95B12223E414300E92297 /* PrintViewController.swift */; };
+		F7BD73B022462D9600B3B6C1 /* checkSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BD73AF22462D9600B3B6C1 /* checkSignViewController.swift */; };
+		F7D70293224688C700027497 /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D70292224688C700027497 /* Bridging-Header.m */; };
+		F7D702952246897900027497 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D702942246897900027497 /* AnimeViewController.swift */; };
+		F7D7029722468A0F00027497 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D7029622468A0E00027497 /* animation.json */; };
+		F7DC95CD2246198E0080AB6B /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Famiee_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		487196976402327B9C89DBDF /* Pods-Famiee１.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Famiee１.release.xcconfig"; path = "Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１.release.xcconfig"; sourceTree = "<group>"; };
 		6D18FD3E2237B76E00F68DA4 /* Famiee１.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Famiee１.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D18FD412237B76E00F68DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D18FD432237B76E00F68DA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +67,11 @@
 		6DC1A9DC22390A9D008D8283 /* 長方形 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "長方形 20.png"; sourceTree = "<group>"; };
 		6DF705012237ECD100FA8FE7 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		6DFC2522223B973E00C65113 /* camaraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camaraViewController.swift; sourceTree = "<group>"; };
+		AD1E9E5AAB2779B107D88A4B /* Pods-Famiee１.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Famiee１.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１.debug.xcconfig"; sourceTree = "<group>"; };
 		F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ckeckImageViewController.swift; sourceTree = "<group>"; };
+		F74608062246211C009F95BC /* Signature2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature2ViewController.swift; sourceTree = "<group>"; };
+		F746080822462792009F95BC /* SignedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedViewController.swift; sourceTree = "<group>"; };
+		F78B643E22460E780038D132 /* cer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cer.png; sourceTree = "<group>"; };
 		F7A95B02223E26ED00E92297 /* SmallBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SmallBtn(r).png"; sourceTree = "<group>"; };
 		F7A95B04223E278500E92297 /* largeBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "largeBtn(r).png"; sourceTree = "<group>"; };
 		F7A95B06223E2A8800E92297 /* LargeBtn(p).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LargeBtn(p).png"; sourceTree = "<group>"; };
@@ -66,6 +81,12 @@
 		F7A95B0E223E339F00E92297 /* checkoff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkoff.jpg; sourceTree = "<group>"; };
 		F7A95B0F223E339F00E92297 /* checkon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkon.jpg; sourceTree = "<group>"; };
 		F7A95B12223E414300E92297 /* PrintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintViewController.swift; sourceTree = "<group>"; };
+		F7BD73AF22462D9600B3B6C1 /* checkSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkSignViewController.swift; sourceTree = "<group>"; };
+		F7D70291224688C700027497 /* Famiee１-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Famiee１-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7D70292224688C700027497 /* Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
+		F7D702942246897900027497 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		F7D7029622468A0E00027497 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
+		F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +94,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F743978110051985A24A775A /* Pods_Famiee_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5619204735B03DB2F8B355C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E9E5AAB2779B107D88A4B /* Pods-Famiee１.debug.xcconfig */,
+				487196976402327B9C89DBDF /* Pods-Famiee１.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6D18FD352237B76E00F68DA4 = {
 			isa = PBXGroup;
 			children = (
+				F7D70292224688C700027497 /* Bridging-Header.m */,
 				6D18FD402237B76E00F68DA4 /* Famiee１ */,
 				6D18FD3F2237B76E00F68DA4 /* Products */,
+				5619204735B03DB2F8B355C1 /* Pods */,
+				B6428E3057C7EAF24E4BD518 /* Frameworks */,
+				F7D70291224688C700027497 /* Famiee１-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,28 +141,43 @@
 				F7A95B06223E2A8800E92297 /* LargeBtn(p).png */,
 				F7A95B0A223E2F7200E92297 /* LargeRed.png */,
 				F7A95B07223E2A8900E92297 /* smallBtn(p).png */,
+				F78B643E22460E780038D132 /* cer.png */,
 				F7A95B04223E278500E92297 /* largeBtn(r).png */,
 				F7A95B02223E26ED00E92297 /* SmallBtn(r).png */,
 				F7A95B0E223E339F00E92297 /* checkoff.jpg */,
 				F7A95B0F223E339F00E92297 /* checkon.jpg */,
+				F7D7029622468A0E00027497 /* animation.json */,
 				6DC1A9D82239090B008D8283 /* UIcolor.swift */,
 				6D18FD412237B76E00F68DA4 /* AppDelegate.swift */,
+				F7BD73AF22462D9600B3B6C1 /* checkSignViewController.swift */,
 				F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */,
 				6D18FD432237B76E00F68DA4 /* ViewController.swift */,
 				6D18FD5B2237BF0100F68DA4 /* ChikaiViewController.swift */,
 				6DF705012237ECD100FA8FE7 /* CheckViewController.swift */,
+				F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */,
 				6D246EAF223A796F00004C7E /* Chikai2ViewController.swift */,
 				6D776B4822391C1200A73D30 /* Check2ViewController.swift */,
 				6D776B4C223922AE00A73D30 /* HakkouViewController.swift */,
 				F7A95B12223E414300E92297 /* PrintViewController.swift */,
 				6DFC2522223B973E00C65113 /* camaraViewController.swift */,
 				6D18FD452237B76E00F68DA4 /* Main.storyboard */,
+				F746080822462792009F95BC /* SignedViewController.swift */,
+				F74608062246211C009F95BC /* Signature2ViewController.swift */,
 				F7A95B0C223E311B00E92297 /* CheckBox.swift */,
 				6D18FD482237B77000F68DA4 /* Assets.xcassets */,
 				6D18FD4A2237B77000F68DA4 /* LaunchScreen.storyboard */,
 				6D18FD4D2237B77000F68DA4 /* Info.plist */,
+				F7D702942246897900027497 /* AnimeViewController.swift */,
 			);
 			path = "Famiee１";
+			sourceTree = "<group>";
+		};
+		B6428E3057C7EAF24E4BD518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D18FD502237B77000F68DA4 /* Build configuration list for PBXNativeTarget "Famiee１" */;
 			buildPhases = (
+				4F592BD427245A3F6FDC543E /* [CP] Check Pods Manifest.lock */,
 				6D18FD3A2237B76E00F68DA4 /* Sources */,
 				6D18FD3B2237B76E00F68DA4 /* Frameworks */,
 				6D18FD3C2237B76E00F68DA4 /* Resources */,
+				BC3917BD54B482A7E96812D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +214,7 @@
 				TargetAttributes = {
 					6D18FD3D2237B76E00F68DA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -191,7 +244,9 @@
 				F7A95B11223E339F00E92297 /* checkon.jpg in Resources */,
 				F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */,
 				6D18FD4C2237B77000F68DA4 /* LaunchScreen.storyboard in Resources */,
+				F7D7029722468A0F00027497 /* animation.json in Resources */,
 				F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */,
+				F78B643F22460E790038D132 /* cer.png in Resources */,
 				6DC1A9DF22390A9D008D8283 /* 長方形 20.png in Resources */,
 				6D18FD562237B82700F68DA4 /* Famiee.png in Resources */,
 				6DC1A9DD22390A9D008D8283 /* back logo.png in Resources */,
@@ -208,6 +263,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F592BD427245A3F6FDC543E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Famiee１-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC3917BD54B482A7E96812D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ACEDrawingView/ACEDrawingView.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACEDrawingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D18FD3A2237B76E00F68DA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,13 +322,19 @@
 				6D18FD442237B76E00F68DA4 /* ViewController.swift in Sources */,
 				6D776B4922391C1200A73D30 /* Check2ViewController.swift in Sources */,
 				F7024D3E223E4CD2006C1869 /* ckeckImageViewController.swift in Sources */,
+				F7DC95CD2246198E0080AB6B /* SignatureViewController.swift in Sources */,
+				F7BD73B022462D9600B3B6C1 /* checkSignViewController.swift in Sources */,
+				F7D702952246897900027497 /* AnimeViewController.swift in Sources */,
 				F7A95B0D223E311B00E92297 /* CheckBox.swift in Sources */,
+				F746080922462792009F95BC /* SignedViewController.swift in Sources */,
 				6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */,
+				F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */,
 				6D18FD5C2237BF0100F68DA4 /* ChikaiViewController.swift in Sources */,
 				6D18FD422237B76E00F68DA4 /* AppDelegate.swift in Sources */,
 				6DC1A9D92239090B008D8283 /* UIcolor.swift in Sources */,
 				6D776B4D223922AE00A73D30 /* HakkouViewController.swift in Sources */,
 				F7A95B13223E414500E92297 /* PrintViewController.swift in Sources */,
+				F7D70293224688C700027497 /* Bridging-Header.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +478,10 @@
 		};
 		6D18FD512237B77000F68DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1E9E5AAB2779B107D88A4B /* Pods-Famiee１.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GS68A638AG;
 				INFOPLIST_FILE = "Famiee１/Info.plist";
@@ -379,6 +491,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenshin.Famiee-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Famiee１-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,8 +500,10 @@
 		};
 		6D18FD522237B77000F68DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487196976402327B9C89DBDF /* Pods-Famiee１.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GS68A638AG;
 				INFOPLIST_FILE = "Famiee１/Info.plist";
@@ -397,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenshin.Famiee-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Famiee１-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -11,6 +11,12 @@ import UIKit
 class HakkouViewController: UIViewController {
     @IBOutlet var box: UIView!
     
+    @IBOutlet var firstname: UILabel!
+    @IBOutlet var firstmessage: UILabel!
+    @IBOutlet var secoundname: UILabel!
+    @IBOutlet var secoundmessage: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //遷移先Viewの左上のbackを消す
@@ -19,12 +25,14 @@ class HakkouViewController: UIViewController {
         
         box.layer.cornerRadius = 40
         
+        let firstName = UserDefaults.standard.object(forKey: "Name") as! String
+        firstname.text = firstName
+        let firstMessage = UserDefaults.standard.object(forKey: "Message") as! String
+        firstmessage.text = firstMessage
+        let secoundName = UserDefaults.standard.object(forKey: "Name2Text") as! String
+        secoundname.text = secoundName
+        let secoundMessage = UserDefaults.standard.object(forKey: "Message2") as! String
+        secoundmessage.text = secoundMessage
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // ナビゲーションを透明にする処理
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
-    }
+
 }
