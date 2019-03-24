@@ -60,11 +60,13 @@ class PrintViewController: UIViewController {
 //        self.view.addSubview(imageView)
         
         // 印刷ページへ遷移するためのボタン
-        let printButton: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 60))
-        printButton.center = CGPoint(x: 174, y: 1632)
+        let printButton: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 410, height: 87))
+        printButton.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height - 100)
+        printButton.layer.cornerRadius = 40
         printButton.tintColor = UIColor.white
-        printButton.backgroundColor = UIColor.blue
-        printButton.setTitle("PRINT", for: .normal)
+        printButton.backgroundColor = UIColor(hex: "F75C5C")
+        printButton.setTitle("印刷する", for: .normal)
+        printButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         printButton.addTarget(self, action: #selector(self.showPrinterView(_:)), for: .touchUpInside)
         self.view.addSubview(printButton)
         

@@ -1156,14 +1156,6 @@ Cg
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rs-31-1T0">
-                                        <rect key="frame" x="174" y="1632" width="410" height="87"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="印刷する" backgroundImage="LargeRed.png"/>
-                                        <connections>
-                                            <segue destination="GXl-DV-ufy" kind="presentation" id="pfD-UC-xNw"/>
-                                        </connections>
-                                    </button>
                                     <view alpha="0.34999999403953552" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBZ-l3-hsG">
                                         <rect key="frame" x="47" y="163" width="674" height="237"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1186,11 +1178,9 @@ Cg
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="centerX" secondItem="kyJ-uR-IvC" secondAttribute="centerX" id="eqk-vZ-NcM"/>
                                     <constraint firstItem="NbE-Tf-dYA" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" constant="42" id="g81-Rm-4dS"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="top" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="8" symbolic="YES" id="haf-Cl-n3B"/>
-                                    <constraint firstItem="4rs-31-1T0" firstAttribute="top" secondItem="NbE-Tf-dYA" secondAttribute="bottom" constant="68" id="is2-A7-q7r"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="centerX" secondItem="bFn-Cd-mqO" secondAttribute="centerX" id="j6J-AT-5W8"/>
                                     <constraint firstItem="bFn-Cd-mqO" firstAttribute="top" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="8" symbolic="YES" id="kgg-eJ-ddI"/>
                                     <constraint firstItem="NbE-Tf-dYA" firstAttribute="top" secondItem="kyJ-uR-IvC" secondAttribute="top" constant="636" id="ow7-YW-3hw"/>
-                                    <constraint firstItem="ztb-3M-VaC" firstAttribute="centerX" secondItem="4rs-31-1T0" secondAttribute="centerX" id="prN-LK-BSe"/>
                                     <constraint firstItem="ECF-gt-Iq8" firstAttribute="top" secondItem="UBZ-l3-hsG" secondAttribute="bottom" constant="53" id="qdm-hi-QK2"/>
                                     <constraint firstAttribute="trailing" secondItem="ztb-3M-VaC" secondAttribute="trailing" constant="189" id="sN9-er-2FF"/>
                                     <constraint firstAttribute="bottom" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="1753" id="sSA-bO-Si8"/>
