@@ -74,11 +74,14 @@ class checkSignViewController: UIViewController {
                     fatalError("Error: \(error.localizedDescription)")
                 }
                 
-                geth.sendRawTransaction(rawTransaction: tx) {_ in
-                    
-                    print(tx)
+                geth.sendRawTransaction(rawTransaction: tx) {result in
+                    switch result {
+                    case .success(let transaction):
+                        print(transaction.id)
+                    case .failure(_):
+                        print("he")
+                    }
                 }
-                
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
             }
