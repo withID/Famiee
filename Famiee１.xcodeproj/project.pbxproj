@@ -28,6 +28,9 @@
 		F743978110051985A24A775A /* Pods_Famiee_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */; };
 		F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74608062246211C009F95BC /* Signature2ViewController.swift */; };
 		F746080922462792009F95BC /* SignedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746080822462792009F95BC /* SignedViewController.swift */; };
+		F7814F962257342E00D5C5C9 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F932257342D00D5C5C9 /* EthereumKit.framework */; };
+		F7814F972257342E00D5C5C9 /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */; };
+		F7814F982257342E00D5C5C9 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F952257342E00D5C5C9 /* CryptoSwift.framework */; };
 		F78B643F22460E790038D132 /* cer.png in Resources */ = {isa = PBXBuildFile; fileRef = F78B643E22460E780038D132 /* cer.png */; };
 		F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B02223E26ED00E92297 /* SmallBtn(r).png */; };
 		F7A95B05223E278500E92297 /* largeBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B04223E278500E92297 /* largeBtn(r).png */; };
@@ -71,6 +74,9 @@
 		F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ckeckImageViewController.swift; sourceTree = "<group>"; };
 		F74608062246211C009F95BC /* Signature2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature2ViewController.swift; sourceTree = "<group>"; };
 		F746080822462792009F95BC /* SignedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedViewController.swift; sourceTree = "<group>"; };
+		F7814F932257342D00D5C5C9 /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
+		F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
+		F7814F952257342E00D5C5C9 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		F78B643E22460E780038D132 /* cer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cer.png; sourceTree = "<group>"; };
 		F7A95B02223E26ED00E92297 /* SmallBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SmallBtn(r).png"; sourceTree = "<group>"; };
 		F7A95B04223E278500E92297 /* largeBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "largeBtn(r).png"; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7814F962257342E00D5C5C9 /* EthereumKit.framework in Frameworks */,
+				F7814F972257342E00D5C5C9 /* CryptoEthereumSwift.framework in Frameworks */,
+				F7814F982257342E00D5C5C9 /* CryptoSwift.framework in Frameworks */,
 				F743978110051985A24A775A /* Pods_Famiee_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +184,9 @@
 		B6428E3057C7EAF24E4BD518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */,
+				F7814F952257342E00D5C5C9 /* CryptoSwift.framework */,
+				F7814F932257342D00D5C5C9 /* EthereumKit.framework */,
 				13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */,
 			);
 			name = Frameworks;
@@ -192,6 +204,7 @@
 				6D18FD3B2237B76E00F68DA4 /* Frameworks */,
 				6D18FD3C2237B76E00F68DA4 /* Resources */,
 				BC3917BD54B482A7E96812D6 /* [CP] Embed Pods Frameworks */,
+				F7814F99225735E000D5C5C9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,6 +322,26 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F7814F99225735E000D5C5C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EthereumKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoEthereumSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -484,6 +517,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GS68A638AG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Famiee１/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,6 +543,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GS68A638AG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Famiee１/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

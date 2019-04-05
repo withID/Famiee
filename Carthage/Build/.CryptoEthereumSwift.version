@@ -1,0 +1,9 @@
+{
+  "commitish" : "2.0.0",
+  "iOS" : [
+    {
+      "name" : "CryptoEthereumSwift",
+      "hash" : "f1a91e745ce08a99f15cd18253ac3065dc3778d16116fc8deb1976ab01dc784d"
+    }
+  ]
+}

@@ -2006,6 +2006,7 @@ Cg
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="登録する" backgroundImage="smallBtn(p).png"/>
                                 <connections>
+                                    <action selector="Write:" destination="Zgu-l9-yTI" eventType="touchUpInside" id="pE5-lM-dzT"/>
                                     <action selector="done:" destination="mcf-uo-KD5" eventType="touchUpInside" id="YK5-FS-PAo"/>
                                     <segue destination="tlw-NH-S82" kind="push" id="dgm-Cg-Zv4"/>
                                 </connections>
