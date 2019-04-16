@@ -8,6 +8,7 @@
 
 import UIKit
 import EthereumKit
+import CryptoSwift
 
 class checkSignViewController: UIViewController {
 
@@ -22,8 +23,15 @@ class checkSignViewController: UIViewController {
         
     }
     
+    func randomString(length: Int) -> String {
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        return String((0..<length).map{ _ in letters.randomElement()! })
+    }
+    
     @IBAction func Write(_ sender: Any) {
         
+        let key = randomString(length: 16)
+        let vi = randomString(length: 16)
         let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0b0c0d0e0f"))
         
         let seed = try! Mnemonic.createSeed(mnemonic: mnemonic)
@@ -60,6 +68,23 @@ class checkSignViewController: UIViewController {
                     fatalError("Error: \(error.localizedDescription)")
                 }
                 
+                do {
+                    
+                    let aes = try AES(key: key, iv: vi)
+                    print(key)
+                    print(vi)
+                    // aes128
+                    let ciphertext = try aes.encrypt(Array("Nullam quis risus eget urna mollis ornare vel eu leo.".utf8))
+                    print(ciphertext)
+                    
+                    let decrypt =  try aes.decrypt(ciphertext)
+                    print("複合化したよ\(decrypt)")
+                    
+//                    print(Array("Nullam quis risus eget urna mollis ornare vel eu leo.".utf8))
+                    let data = NSData(bytes: decrypt, length: decrypt.count)
+                    let string = String(data: data as Data, encoding: .utf8)
+                    print(string as Any)
+                } catch { }
                 //メッセージの内容
                 let str = "☺️😛😇🤑😎"
                 let data: Data? = str.data(using: .utf8)
@@ -86,11 +111,7 @@ class checkSignViewController: UIViewController {
                 print("Error: \(error.localizedDescription)")
             }
         }
-
-    
     }
-    
-
 }
     
     

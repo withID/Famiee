@@ -12,7 +12,6 @@
 		6D18FD472237B76E00F68DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D18FD452237B76E00F68DA4 /* Main.storyboard */; };
 		6D18FD492237B77000F68DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D18FD482237B77000F68DA4 /* Assets.xcassets */; };
 		6D18FD4C2237B77000F68DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D18FD4A2237B77000F68DA4 /* LaunchScreen.storyboard */; };
-		6D18FD552237B82700F68DA4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D18FD532237B82600F68DA4 /* background.png */; };
 		6D18FD562237B82700F68DA4 /* Famiee.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D18FD542237B82600F68DA4 /* Famiee.png */; };
 		6D18FD5C2237BF0100F68DA4 /* ChikaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D18FD5B2237BF0100F68DA4 /* ChikaiViewController.swift */; };
 		6D246EB0223A796F00004C7E /* Chikai2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D246EAF223A796F00004C7E /* Chikai2ViewController.swift */; };
@@ -46,6 +45,10 @@
 		F7D702952246897900027497 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D702942246897900027497 /* AnimeViewController.swift */; };
 		F7D7029722468A0F00027497 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D7029622468A0E00027497 /* animation.json */; };
 		F7DC95CD2246198E0080AB6B /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */; };
+		F7F445BE2261ABF500426A15 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F445BD2261ABF300426A15 /* bg.png */; };
+		F7FF13492265B5510089610E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF13482265B5510089610E /* background.png */; };
+		F7FF134B2265B8790089610E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF134A2265B8770089610E /* image.png */; };
+		F7FF134D2265B9450089610E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF134C2265B9430089610E /* button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +61,6 @@
 		6D18FD482237B77000F68DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D18FD4B2237B77000F68DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D18FD4D2237B77000F68DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D18FD532237B82600F68DA4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		6D18FD542237B82600F68DA4 /* Famiee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Famiee.png; sourceTree = "<group>"; };
 		6D18FD5B2237BF0100F68DA4 /* ChikaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChikaiViewController.swift; sourceTree = "<group>"; };
 		6D246EAF223A796F00004C7E /* Chikai2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chikai2ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,10 @@
 		F7D702942246897900027497 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
 		F7D7029622468A0E00027497 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
 		F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		F7F445BD2261ABF300426A15 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		F7FF13482265B5510089610E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
+		F7FF134A2265B8770089610E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		F7FF134C2265B9430089610E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +148,12 @@
 		6D18FD402237B76E00F68DA4 /* Famiee１ */ = {
 			isa = PBXGroup;
 			children = (
-				6D18FD532237B82600F68DA4 /* background.png */,
+				6D18FD452237B76E00F68DA4 /* Main.storyboard */,
+				F7FF13482265B5510089610E /* background.png */,
 				6D18FD542237B82600F68DA4 /* Famiee.png */,
 				6DC1A9DA22390A9D008D8283 /* back logo.png */,
 				6DC1A9DC22390A9D008D8283 /* 長方形 20.png */,
+				F7FF134C2265B9430089610E /* button.png */,
 				6D776B462239183600A73D30 /* backgraund1.png */,
 				F7A95B06223E2A8800E92297 /* LargeBtn(p).png */,
 				F7A95B0A223E2F7200E92297 /* LargeRed.png */,
@@ -153,7 +161,9 @@
 				F78B643E22460E780038D132 /* cer.png */,
 				F7A95B04223E278500E92297 /* largeBtn(r).png */,
 				F7A95B02223E26ED00E92297 /* SmallBtn(r).png */,
+				F7FF134A2265B8770089610E /* image.png */,
 				F7A95B0E223E339F00E92297 /* checkoff.jpg */,
+				F7F445BD2261ABF300426A15 /* bg.png */,
 				F7A95B0F223E339F00E92297 /* checkon.jpg */,
 				F7D7029622468A0E00027497 /* animation.json */,
 				6DC1A9D82239090B008D8283 /* UIcolor.swift */,
@@ -169,7 +179,6 @@
 				6D776B4C223922AE00A73D30 /* HakkouViewController.swift */,
 				F7A95B12223E414300E92297 /* PrintViewController.swift */,
 				6DFC2522223B973E00C65113 /* camaraViewController.swift */,
-				6D18FD452237B76E00F68DA4 /* Main.storyboard */,
 				F746080822462792009F95BC /* SignedViewController.swift */,
 				F74608062246211C009F95BC /* Signature2ViewController.swift */,
 				F7A95B0C223E311B00E92297 /* CheckBox.swift */,
@@ -255,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A95B11223E339F00E92297 /* checkon.jpg in Resources */,
+				F7FF134D2265B9450089610E /* button.png in Resources */,
 				F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */,
+				F7F445BE2261ABF500426A15 /* bg.png in Resources */,
 				6D18FD4C2237B77000F68DA4 /* LaunchScreen.storyboard in Resources */,
 				F7D7029722468A0F00027497 /* animation.json in Resources */,
 				F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */,
@@ -264,8 +275,9 @@
 				6D18FD562237B82700F68DA4 /* Famiee.png in Resources */,
 				6DC1A9DD22390A9D008D8283 /* back logo.png in Resources */,
 				F7A95B0B223E2F7300E92297 /* LargeRed.png in Resources */,
-				6D18FD552237B82700F68DA4 /* background.png in Resources */,
+				F7FF13492265B5510089610E /* background.png in Resources */,
 				F7A95B10223E339F00E92297 /* checkoff.jpg in Resources */,
+				F7FF134B2265B8790089610E /* image.png in Resources */,
 				F7A95B05223E278500E92297 /* largeBtn(r).png in Resources */,
 				F7A95B09223E2A8900E92297 /* smallBtn(p).png in Resources */,
 				6D18FD492237B77000F68DA4 /* Assets.xcassets in Resources */,

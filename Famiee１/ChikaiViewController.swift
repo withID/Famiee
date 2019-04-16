@@ -28,13 +28,20 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         self.navigationItem.backBarButtonItem = myBackButton
         
         vowText.font = UIFont.systemFont(ofSize: 21)
+        nextButton.layer.cornerRadius = 40
         
-        BoardView.layer.cornerRadius = 40
-        nameText.layer.cornerRadius = 40
+        nextButton.layer.shadowOpacity = 0.5
+        nextButton.layer.shadowRadius = 12
+        nextButton.layer.shadowColor = UIColor.black.cgColor
+        nextButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        
+        BoardView.layer.cornerRadius = 5
+        nameText.layer.cornerRadius = 5
 //        vowText.layer.cornerRadius = 40
         
-        nameView.layer.cornerRadius = 20
-        vowView.layer.cornerRadius = 40
+        nameView.layer.cornerRadius = 5
+        vowView.layer.cornerRadius = 5
         
         nameText.delegate = self
         nameText.returnKeyType = .done
