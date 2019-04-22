@@ -1492,7 +1492,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esb-JM-6IG">
                                                 <rect key="frame" x="55" y="876" width="564" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1540,9 +1540,17 @@
                                             <constraint firstAttribute="height" constant="237" id="bMm-C9-79K"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="11l-7w-ZWl">
+                                        <rect key="frame" x="574" y="1580" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="NsT-r3-Ve8"/>
+                                            <constraint firstAttribute="height" constant="150" id="oYz-Uu-v2C"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="centerX" secondItem="jZZ-gC-o3H" secondAttribute="centerX" id="2Fv-ei-2Gm"/>
+                                    <constraint firstAttribute="trailing" secondItem="11l-7w-ZWl" secondAttribute="trailing" constant="44" id="7Rt-B5-sMB"/>
                                     <constraint firstItem="NbE-Tf-dYA" firstAttribute="top" secondItem="ECF-gt-Iq8" secondAttribute="bottom" constant="47" id="EjK-K7-giT"/>
                                     <constraint firstItem="UBZ-l3-hsG" firstAttribute="leading" secondItem="kyJ-uR-IvC" secondAttribute="leading" constant="47" id="Fhh-yn-q2P"/>
                                     <constraint firstItem="ztb-3M-VaC" firstAttribute="centerX" secondItem="NbE-Tf-dYA" secondAttribute="centerX" id="K34-KW-JPS"/>
@@ -1561,6 +1569,7 @@
                                     <constraint firstItem="ECF-gt-Iq8" firstAttribute="top" secondItem="UBZ-l3-hsG" secondAttribute="bottom" constant="53" id="qdm-hi-QK2"/>
                                     <constraint firstAttribute="trailing" secondItem="ztb-3M-VaC" secondAttribute="trailing" constant="189" id="sN9-er-2FF"/>
                                     <constraint firstAttribute="bottom" secondItem="ztb-3M-VaC" secondAttribute="bottom" constant="1753" id="sSA-bO-Si8"/>
+                                    <constraint firstItem="11l-7w-ZWl" firstAttribute="top" secondItem="NbE-Tf-dYA" secondAttribute="bottom" constant="16" id="wkn-Y6-A11"/>
                                     <constraint firstItem="jZZ-gC-o3H" firstAttribute="leading" secondItem="bFn-Cd-mqO" secondAttribute="leading" id="wzu-4B-gpd"/>
                                 </constraints>
                             </scrollView>
@@ -1582,6 +1591,7 @@
                         <outlet property="firstname" destination="fmF-jY-HsN" id="uFw-0u-eVP"/>
                         <outlet property="overView" destination="UBZ-l3-hsG" id="LP4-GU-1Bu"/>
                         <outlet property="pass" destination="lLS-WH-N40" id="Sof-GS-ImX"/>
+                        <outlet property="qrImage" destination="11l-7w-ZWl" id="FLP-hp-uhn"/>
                         <outlet property="secoundmessage" destination="REB-0T-LNs" id="8ci-fd-2HZ"/>
                         <outlet property="secoundname" destination="GuT-zq-VKa" id="J1C-N2-G2s"/>
                         <outlet property="sign1" destination="Se4-jB-XaS" id="H7v-y5-ooX"/>
@@ -1591,7 +1601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTv-XY-ndY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11108.59375" y="258.69140625"/>
+            <point key="canvasLocation" x="11107.913669064748" y="258.5427135678392"/>
         </scene>
         <!--Hakkou View Controller-->
         <scene sceneID="wXi-cL-B7A">

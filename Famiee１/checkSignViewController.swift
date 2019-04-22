@@ -82,45 +82,66 @@ class checkSignViewController: UIViewController {
                     self.ciphertext = try aes.encrypt(Array("\(self.firstName)と\(self.secoundName)は、以下の誓いのものとにカップルであることを誓いました。\(self.firstMessage),\(self.secoundMessage)".utf8))
                     print(self.ciphertext)
                     
-                    let decrypt =  try aes.decrypt(self.ciphertext)
-                    print("複合化したよ\(decrypt)")
-                    
-//                    print(Array("Nullam quis risus eget urna mollis ornare vel eu leo.".utf8))
-                    let data = NSData(bytes: decrypt, length: decrypt.count)
-                    let string = String(data: data as Data, encoding: .utf8)
-                    print(string as Any)
                     UserDefaults.standard.set(key, forKey: "key")
                 } catch { }
-                //メッセージの内容
-                let cipher = "\(self.ciphertext)"
-                print(cipher)
-                let data: Data? =  cipher.data(using: .utf8)
-                print(data)
+               
                 
                 if UserDefaults.standard.object(forKey: "check") as! String == "" {
                     
+                    //メッセージの内容
+                    let cipher = "\(self.firstName)と\(self.secoundName)は、以下の誓いのものとにカップルであることを誓いました。\(self.firstMessage),\(self.secoundMessage)"
+                    print(cipher)
+                    let data: Data? =  cipher.data(using: .utf8)
+                    print(data)
+                    
+                    let rawTransaction = RawTransaction(wei: "100", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 121000, nonce: nonce, data: data!)
+                    
+                    let tx: String
+                    do {
+                        tx = try wallet.sign(rawTransaction: rawTransaction)
+                    } catch let error {
+                        fatalError("Error: \(error.localizedDescription)")
+                    }
+                    
+                    geth.sendRawTransaction(rawTransaction: tx) {result in
+                        switch result {
+                        case .success(let transaction):
+                            print(transaction.id)
+                            UserDefaults.standard.set(transaction.id, forKey: "TxID")
+                        case .failure(_):
+                            print("トランザクションを遅れていない")
+                        }
+                    }
+                    
                 }else{
+                    
+                    //メッセージの内容
+                    let cipher = "\(self.ciphertext)"
+                    print(cipher)
+                    let data: Data? =  cipher.data(using: .utf8)
+                    print(data)
+                    
+                    let rawTransaction = RawTransaction(wei: "100", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 121000, nonce: nonce, data: data!)
+                    
+                    let tx: String
+                    do {
+                        tx = try wallet.sign(rawTransaction: rawTransaction)
+                    } catch let error {
+                        fatalError("Error: \(error.localizedDescription)")
+                    }
+                    
+                    geth.sendRawTransaction(rawTransaction: tx) {result in
+                        switch result {
+                        case .success(let transaction):
+                            print(transaction.id)
+                            UserDefaults.standard.set(transaction.id, forKey: "TxID")
+                        case .failure(_):
+                            print("トランザクションを遅れていない")
+                        }
+                    }
                     
                 }
                 
-                let rawTransaction = RawTransaction(wei: "100", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 121000, nonce: nonce, data: data!)
-                
-                let tx: String
-                do {
-                    tx = try wallet.sign(rawTransaction: rawTransaction)
-                } catch let error {
-                    fatalError("Error: \(error.localizedDescription)")
-                }
-                
-                geth.sendRawTransaction(rawTransaction: tx) {result in
-                    switch result {
-                    case .success(let transaction):
-                        print(transaction.id)
-                        UserDefaults.standard.set(transaction.id, forKey: "TxID")
-                    case .failure(_):
-                        print("トランザクションを遅れていない")
-                    }
-                }
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
             }

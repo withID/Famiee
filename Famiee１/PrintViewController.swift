@@ -5,6 +5,8 @@
 
 
 import UIKit
+import CoreImage
+
 
 class PrintViewController: UIViewController {
     @IBOutlet var overView: UIView!
@@ -19,6 +21,7 @@ class PrintViewController: UIViewController {
     @IBOutlet var secoundmessage: UILabel!
     @IBOutlet var pass: UILabel!
     @IBOutlet var TxID: UILabel!
+    @IBOutlet var qrImage: UIImageView!
     
     
     var printingImage: UIImage?
@@ -72,6 +75,23 @@ class PrintViewController: UIViewController {
         printButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         printButton.addTarget(self, action: #selector(self.showPrinterView(_:)), for: .touchUpInside)
         self.view.addSubview(printButton)
+        
+        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
+        let url = "https://ropsten.etherscan.io/tx/\(txid)"
+        
+        // NSString から NSDataへ変換
+        let data = url.data(using: String.Encoding.utf8)!
+        
+        // QRコード生成のフィルター
+        // NSData型でデーターを用意
+        // inputCorrectionLevelは、誤り訂正レベル
+        let qr = CIFilter(name: "CIQRCodeGenerator", parameters: ["inputMessage": data, "inputCorrectionLevel": "M"])!
+        
+        
+        let sizeTransform = CGAffineTransform(scaleX: 10, y: 10)
+        let qrImages = qr.outputImage!.transformed(by: sizeTransform)
+        
+        qrImage.image = UIImage(ciImage: qrImages)
         
     }
     // 印刷ページを表示する
