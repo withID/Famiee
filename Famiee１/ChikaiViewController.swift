@@ -1,9 +1,7 @@
 //
 //  ChikaiViewController.swift
 //  Famiee１
-//
-//  Created by 高岸　憲伸 on 2019/03/12.
-//  Copyright © 2019 高岸　憲伸. All rights reserved.
+// reserved.
 //
 
 import UIKit
@@ -14,7 +12,7 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
     @IBOutlet var nameView: UIView!
     @IBOutlet var nameText: UITextField!
     @IBOutlet var vowView: UIView!
-    @IBOutlet var vowText: UITextView!
+    @IBOutlet var vowText: PlaceHolderTextView!
     @IBOutlet var checkedBtn: UIButton!
     
     @IBOutlet var nextButton: UIButton!
@@ -28,13 +26,6 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         self.navigationItem.backBarButtonItem = myBackButton
         
         vowText.font = UIFont.systemFont(ofSize: 21)
-        nextButton.layer.cornerRadius = 40
-        
-        nextButton.layer.shadowOpacity = 0.5
-        nextButton.layer.shadowRadius = 12
-        nextButton.layer.shadowColor = UIColor.black.cgColor
-        nextButton.layer.shadowOffset = CGSize(width: 5, height: 5)
-        
         
         BoardView.layer.cornerRadius = 5
         nameText.layer.cornerRadius = 5
@@ -46,10 +37,14 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         nameText.delegate = self
         nameText.returnKeyType = .done
         nameText.clearButtonMode = .always
+        
         vowText.delegate = self
         vowText.returnKeyType = .done
-//        vowText.clearButtonMode = .always
 
+        vowText.placeHolder = "あなたがパートナーとの間でかわす誓いのを入力してください"
+        vowText.placeHolderColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.4)
+
+        
         
     }
     
@@ -71,17 +66,20 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         
         
         if isChecked == false {
-            
+            //暗号化しない
             let CheckViewController = self.storyboard?.instantiateViewController(withIdentifier: "toCheckVC") as! CheckViewController
             self.navigationController?.pushViewController(CheckViewController, animated: true)
             //遷移先のBox変数に、このコードないの変数Stringを代入する
             
             CheckViewController.name = nameText.text!
             CheckViewController.Chikai = vowText.text!
+            UserDefaults.standard.set("", forKey: "check")
             
         }else{
+            //暗号化する
             let CheckViewController = self.storyboard?.instantiateViewController(withIdentifier: "toCheckCVC") as! CheckViewController
             self.navigationController?.pushViewController(CheckViewController, animated: true)
+            UserDefaults.standard.set("check", forKey: "check")
             //遷移先のBox変数に、このコードないの変数Stringを代入する
             
             CheckViewController.name = nameText.text!

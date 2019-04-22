@@ -13,10 +13,15 @@ import CryptoSwift
 class checkSignViewController: UIViewController {
 
     @IBOutlet var Cer: UIImageView!
+    var firstName = UserDefaults.standard.object(forKey: "Name") as! String
+    var firstMessage = UserDefaults.standard.object(forKey: "Message") as! String
+    var secoundName = UserDefaults.standard.object(forKey: "Name2Text") as! String
+    var secoundMessage = UserDefaults.standard.object(forKey: "Message2") as! String
+    var ciphertext = Array<UInt8>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         let image = UserDefaults.standard.object(forKey: "box")
         Cer.image = UIImage(data: image as! Data)
         
@@ -31,7 +36,7 @@ class checkSignViewController: UIViewController {
     @IBAction func Write(_ sender: Any) {
         
         let key = randomString(length: 16)
-        let vi = randomString(length: 16)
+        let vi = "abcdefghijklmnop"
         let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0b0c0d0e0f"))
         
         let seed = try! Mnemonic.createSeed(mnemonic: mnemonic)
@@ -74,21 +79,29 @@ class checkSignViewController: UIViewController {
                     print(key)
                     print(vi)
                     // aes128
-                    let ciphertext = try aes.encrypt(Array("Nullam quis risus eget urna mollis ornare vel eu leo.".utf8))
-                    print(ciphertext)
+                    self.ciphertext = try aes.encrypt(Array("\(self.firstName)と\(self.secoundName)は、以下の誓いのものとにカップルであることを誓いました。\(self.firstMessage),\(self.secoundMessage)".utf8))
+                    print(self.ciphertext)
                     
-                    let decrypt =  try aes.decrypt(ciphertext)
+                    let decrypt =  try aes.decrypt(self.ciphertext)
                     print("複合化したよ\(decrypt)")
                     
 //                    print(Array("Nullam quis risus eget urna mollis ornare vel eu leo.".utf8))
                     let data = NSData(bytes: decrypt, length: decrypt.count)
                     let string = String(data: data as Data, encoding: .utf8)
                     print(string as Any)
+                    UserDefaults.standard.set(key, forKey: "key")
                 } catch { }
                 //メッセージの内容
-                let str = "☺️😛😇🤑😎"
-                let data: Data? = str.data(using: .utf8)
+                let cipher = "\(self.ciphertext)"
+                print(cipher)
+                let data: Data? =  cipher.data(using: .utf8)
+                print(data)
                 
+                if UserDefaults.standard.object(forKey: "check") as! String == "" {
+                    
+                }else{
+                    
+                }
                 
                 let rawTransaction = RawTransaction(wei: "100", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 121000, nonce: nonce, data: data!)
                 
@@ -103,8 +116,9 @@ class checkSignViewController: UIViewController {
                     switch result {
                     case .success(let transaction):
                         print(transaction.id)
+                        UserDefaults.standard.set(transaction.id, forKey: "TxID")
                     case .failure(_):
-                        print("he")
+                        print("トランザクションを遅れていない")
                     }
                 }
             case .failure(let error):

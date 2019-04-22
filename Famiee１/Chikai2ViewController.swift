@@ -13,7 +13,7 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate,UITextViewDele
     @IBOutlet var nameView2: UIView!
     @IBOutlet var ChikaiView2: UIView!
     @IBOutlet var nameText2: UITextField!
-    @IBOutlet var ChikaiText2: UITextView!
+    @IBOutlet var ChikaiText2: PlaceHolderTextView!
     @IBOutlet var nextButton2: UIButton!
     @IBOutlet var checkedBtn: UIButton!
     var isChecked = true
@@ -28,17 +28,20 @@ class Chikai2ViewController: UIViewController,UITextFieldDelegate,UITextViewDele
         nameText2.delegate = self
         ChikaiText2.delegate = self
         
-        board2.layer.cornerRadius = 40
-        nameText2.layer.cornerRadius = 40
-        ChikaiText2.layer.cornerRadius = 40
-        nameView2.layer.cornerRadius = 20
-        ChikaiView2.layer.cornerRadius = 40
+        board2.layer.cornerRadius = 5
+        nameText2.layer.cornerRadius = 5
+        ChikaiText2.layer.cornerRadius = 5
+        nameView2.layer.cornerRadius = 5
+        ChikaiView2.layer.cornerRadius = 5
         nameText2.returnKeyType = .done
         nameText2.clearButtonMode = .always
         ChikaiText2.returnKeyType = .done
         
         nameText2.delegate = self
         ChikaiText2.delegate = self
+        
+        ChikaiText2.placeHolder = "あなたがパートナーとの間でかわす誓いのを入力してください"
+        ChikaiText2.placeHolderColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.4)
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

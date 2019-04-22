@@ -11,7 +11,6 @@ import UIKit
 class CheckViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var ChikaiLabel: UITextView!
-    @IBOutlet var Borad: UIView!
     
     
     var Chikai = String()
@@ -22,8 +21,7 @@ class CheckViewController: UIViewController {
         //遷移先Viewの左上のbackを消す
         let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = myBackButton
-        
-        Borad.layer.cornerRadius = 40
+    
         nameLabel.text = name
         ChikaiLabel.text = Chikai
         

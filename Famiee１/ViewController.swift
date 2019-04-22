@@ -21,10 +21,6 @@ class ViewController: UIViewController {
         let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = myBackButton
         
-        leftBtn.layer.cornerRadius = 25
-        centerBtn.layer.cornerRadius = 25
-        rightBtn.layer.cornerRadius = 25
-        
     }
     
 }

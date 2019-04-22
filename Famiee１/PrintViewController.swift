@@ -2,9 +2,7 @@
 //  PrintViewController.swift
 //  Famiee１
 //
-//  Created by 高岸　憲伸 on 2019/03/15.
-//  Copyright © 2019 高岸　憲伸. All rights reserved.
-//
+
 
 import UIKit
 
@@ -19,6 +17,9 @@ class PrintViewController: UIViewController {
     @IBOutlet var firstmessage: UILabel!
     @IBOutlet var secoundname: UILabel!
     @IBOutlet var secoundmessage: UILabel!
+    @IBOutlet var pass: UILabel!
+    @IBOutlet var TxID: UILabel!
+    
     
     var printingImage: UIImage?
     var image = UIImage()
@@ -43,6 +44,8 @@ class PrintViewController: UIViewController {
         let imagedata2 = UserDefaults.standard.object(forKey: "Sign2Image")
         sign2.image = UIImage(data: imagedata2 as! Data)
         
+        TxID.text = UserDefaults.standard.object(forKey: "TxID") as! String
+        pass.text = UserDefaults.standard.object(forKey: "key") as! String
         
         
         UIGraphicsBeginImageContextWithOptions(underView.frame.size, false, 1)

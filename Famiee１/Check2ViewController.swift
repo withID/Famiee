@@ -2,9 +2,6 @@
 //  Check2ViewController.swift
 //  Famiee１
 //
-//  Created by 高岸　憲伸 on 2019/03/13.
-//  Copyright © 2019 高岸　憲伸. All rights reserved.
-//
 
 import UIKit
 
@@ -14,7 +11,6 @@ class Check2ViewController: UIViewController {
     @IBOutlet var ChikaiLabel3: UITextView!
     
 
-    @IBOutlet var Board: UIView!
     
     var name2 = String()
     var chikai2 = String()
