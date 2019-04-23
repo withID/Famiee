@@ -41,6 +41,7 @@
 		F7A95B11223E339F00E92297 /* checkon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B0F223E339F00E92297 /* checkon.jpg */; };
 		F7A95B13223E414500E92297 /* PrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A95B12223E414300E92297 /* PrintViewController.swift */; };
 		F7BADF3A22685568001D2296 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BADF3922685564001D2296 /* background.png */; };
+		F7BCD165226F022600A85155 /* Certification.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BCD164226F022500A85155 /* Certification.png */; };
 		F7BD73B022462D9600B3B6C1 /* checkSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BD73AF22462D9600B3B6C1 /* checkSignViewController.swift */; };
 		F7D70293224688C700027497 /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D70292224688C700027497 /* Bridging-Header.m */; };
 		F7D702952246897900027497 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D702942246897900027497 /* AnimeViewController.swift */; };
@@ -95,6 +96,7 @@
 		F7A95B0F223E339F00E92297 /* checkon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkon.jpg; sourceTree = "<group>"; };
 		F7A95B12223E414300E92297 /* PrintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintViewController.swift; sourceTree = "<group>"; };
 		F7BADF3922685564001D2296 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/background.png"; sourceTree = "<group>"; };
+		F7BCD164226F022500A85155 /* Certification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Certification.png; sourceTree = "<group>"; };
 		F7BD73AF22462D9600B3B6C1 /* checkSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkSignViewController.swift; sourceTree = "<group>"; };
 		F7D70291224688C700027497 /* Famiee１-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Famiee１-Bridging-Header.h"; sourceTree = "<group>"; };
 		F7D70292224688C700027497 /* Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				6D18FD452237B76E00F68DA4 /* Main.storyboard */,
 				F7E36E7C226B234700E967E8 /* PlaceHolderTextView.swift */,
+				F7BCD164226F022500A85155 /* Certification.png */,
 				F7BADF3922685564001D2296 /* background.png */,
 				6D18FD542237B82600F68DA4 /* Famiee.png */,
 				6DC1A9DA22390A9D008D8283 /* back logo.png */,
@@ -284,6 +287,7 @@
 				F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */,
 				F7F445BE2261ABF500426A15 /* bg.png in Resources */,
 				6D18FD4C2237B77000F68DA4 /* LaunchScreen.storyboard in Resources */,
+				F7BCD165226F022600A85155 /* Certification.png in Resources */,
 				F7BADF3A22685568001D2296 /* background.png in Resources */,
 				F7FF13512265C4BC0089610E /* longButton.png in Resources */,
 				F7D7029722468A0F00027497 /* animation.json in Resources */,
@@ -340,6 +344,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ACEDrawingView/ACEDrawingView.framework",
+				"${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -347,6 +352,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACEDrawingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKImageCropper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +569,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Famiee１-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -588,7 +594,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Famiee１-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -6,5 +6,6 @@
 #define Famiee１_Bridging_Header_h
 
 #import <Lottie/Lottie.h>
+#import <RSKImageCropper/RSKImageCropper.h>
 
 #endif

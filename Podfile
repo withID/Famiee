@@ -8,7 +8,7 @@ target 'Famiee１' do
   # Pods for Famiee１
 
   pod 'ACEDrawingView'
-
+  pod 'RSKImageCropper'
   pod 'lottie-ios'
 
 end

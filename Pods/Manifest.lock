@@ -1,20 +1,24 @@
 PODS:
   - ACEDrawingView (2.2.1)
   - lottie-ios (2.5.2)
+  - RSKImageCropper (2.2.1)
 
 DEPENDENCIES:
   - ACEDrawingView
   - lottie-ios
+  - RSKImageCropper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ACEDrawingView
     - lottie-ios
+    - RSKImageCropper
 
 SPEC CHECKSUMS:
   ACEDrawingView: fa6e8461682a54db3ac65151474fc77ef7e54fd2
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
 
-PODFILE CHECKSUM: 8013ce818061d6b915c788f80b61e314c75d1774
+PODFILE CHECKSUM: 616be430dcde312f5b35aa152faf361d0d93d795
 
 COCOAPODS: 1.5.3

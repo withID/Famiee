@@ -102,6 +102,7 @@ import AVFoundation
             // プロパティの条件を満たしたカメラデバイスの取得
             let devices = deviceDiscoverySession.devices
             
+            
             for device in devices {
                 if device.position == AVCaptureDevice.Position.back {
                     mainCamera = device
@@ -110,7 +111,7 @@ import AVFoundation
                 }
             }
             // 起動時のカメラを設定
-            currentDevice = mainCamera
+            currentDevice = innerCamera
         }
         
         // 入出力データの設定
