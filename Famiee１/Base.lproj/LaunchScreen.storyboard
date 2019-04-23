@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,23 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="IhN-K5-5Ae">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="IhN-K5-5Ae">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Famiee.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aiw-Ex-m3Z">
-                                <rect key="frame" x="162" y="393" width="444" height="238"/>
+                                <rect key="frame" x="290" y="564" width="444" height="238"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="IhN-K5-5Ae" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D75-8P-Y5M"/>
+                            <constraint firstItem="IhN-K5-5Ae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HJ4-j5-SVg"/>
+                            <constraint firstItem="IhN-K5-5Ae" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QMq-Cx-hq7"/>
                             <constraint firstItem="Aiw-Ex-m3Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mAD-t5-DMP"/>
+                            <constraint firstItem="IhN-K5-5Ae" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="n8Z-Q0-nRA"/>
                             <constraint firstItem="Aiw-Ex-m3Z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vON-R7-yva"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

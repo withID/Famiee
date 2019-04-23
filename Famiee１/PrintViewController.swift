@@ -47,8 +47,8 @@ class PrintViewController: UIViewController {
         let imagedata2 = UserDefaults.standard.object(forKey: "Sign2Image")
         sign2.image = UIImage(data: imagedata2 as! Data)
         
-        TxID.text = UserDefaults.standard.object(forKey: "TxID") as! String
-        pass.text = UserDefaults.standard.object(forKey: "key") as! String
+//        TxID.text = UserDefaults.standard.object(forKey: "TxID") as! String
+//        pass.text = UserDefaults.standard.object(forKey: "key") as! String
         
         
         UIGraphicsBeginImageContextWithOptions(underView.frame.size, false, 1)
@@ -76,9 +76,10 @@ class PrintViewController: UIViewController {
         printButton.addTarget(self, action: #selector(self.showPrinterView(_:)), for: .touchUpInside)
         self.view.addSubview(printButton)
         
-        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
-        let url = "https://ropsten.etherscan.io/tx/\(txid)"
+//        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
+//        let url = "https://ropsten.etherscan.io/tx/\(txid)"
         
+        let url = "https://ropsten.etherscan.io/tx"
         // NSString から NSDataへ変換
         let data = url.data(using: String.Encoding.utf8)!
         
