@@ -20,22 +20,13 @@
 		6D776B4D223922AE00A73D30 /* HakkouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D776B4C223922AE00A73D30 /* HakkouViewController.swift */; };
 		6DC1A9D92239090B008D8283 /* UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC1A9D82239090B008D8283 /* UIcolor.swift */; };
 		6DC1A9DD22390A9D008D8283 /* back logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC1A9DA22390A9D008D8283 /* back logo.png */; };
-		6DC1A9DF22390A9D008D8283 /* 長方形 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC1A9DC22390A9D008D8283 /* 長方形 20.png */; };
 		6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF705012237ECD100FA8FE7 /* CheckViewController.swift */; };
-		6DFC2523223B973E00C65113 /* camaraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC2522223B973E00C65113 /* camaraViewController.swift */; };
-		F7024D3E223E4CD2006C1869 /* ckeckImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */; };
 		F743978110051985A24A775A /* Pods_Famiee_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */; };
 		F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74608062246211C009F95BC /* Signature2ViewController.swift */; };
 		F746080922462792009F95BC /* SignedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746080822462792009F95BC /* SignedViewController.swift */; };
 		F7814F962257342E00D5C5C9 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F932257342D00D5C5C9 /* EthereumKit.framework */; };
 		F7814F972257342E00D5C5C9 /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */; };
 		F7814F982257342E00D5C5C9 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F952257342E00D5C5C9 /* CryptoSwift.framework */; };
-		F78B643F22460E790038D132 /* cer.png in Resources */ = {isa = PBXBuildFile; fileRef = F78B643E22460E780038D132 /* cer.png */; };
-		F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B02223E26ED00E92297 /* SmallBtn(r).png */; };
-		F7A95B05223E278500E92297 /* largeBtn(r).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B04223E278500E92297 /* largeBtn(r).png */; };
-		F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B06223E2A8800E92297 /* LargeBtn(p).png */; };
-		F7A95B09223E2A8900E92297 /* smallBtn(p).png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B07223E2A8900E92297 /* smallBtn(p).png */; };
-		F7A95B0B223E2F7300E92297 /* LargeRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B0A223E2F7200E92297 /* LargeRed.png */; };
 		F7A95B0D223E311B00E92297 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A95B0C223E311B00E92297 /* CheckBox.swift */; };
 		F7A95B10223E339F00E92297 /* checkoff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B0E223E339F00E92297 /* checkoff.jpg */; };
 		F7A95B11223E339F00E92297 /* checkon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7A95B0F223E339F00E92297 /* checkon.jpg */; };
@@ -48,13 +39,13 @@
 		F7D7029722468A0F00027497 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D7029622468A0E00027497 /* animation.json */; };
 		F7DC95CD2246198E0080AB6B /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */; };
 		F7E36E7D226B234700E967E8 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E36E7C226B234700E967E8 /* PlaceHolderTextView.swift */; };
-		F7F445BE2261ABF500426A15 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F445BD2261ABF300426A15 /* bg.png */; };
+		F7E475CD22717B9100D2D1A5 /* PhtotoWithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E475CC22717B9100D2D1A5 /* PhtotoWithViewController.swift */; };
+		F7E475CF2271837900D2D1A5 /* PhotocheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E475CE2271837900D2D1A5 /* PhotocheckViewController.swift */; };
+		F7E475D12271855A00D2D1A5 /* PhotocerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E475D02271855A00D2D1A5 /* PhotocerViewController.swift */; };
 		F7FF134B2265B8790089610E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF134A2265B8770089610E /* image.png */; };
 		F7FF134D2265B9450089610E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF134C2265B9430089610E /* button.png */; };
 		F7FF13502265C4BC0089610E /* shortButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF134E2265C4BC0089610E /* shortButton.png */; };
 		F7FF13512265C4BC0089610E /* longButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF134F2265C4BC0089610E /* longButton.png */; };
-		F7FF13532265F3A30089610E /* oneperson.svg in Resources */ = {isa = PBXBuildFile; fileRef = F7FF13522265F3A30089610E /* oneperson.svg */; };
-		F7FF13552265F3F30089610E /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FF13542265F3EE0089610E /* one.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,22 +66,13 @@
 		6D776B4C223922AE00A73D30 /* HakkouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HakkouViewController.swift; sourceTree = "<group>"; };
 		6DC1A9D82239090B008D8283 /* UIcolor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIcolor.swift; sourceTree = "<group>"; };
 		6DC1A9DA22390A9D008D8283 /* back logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back logo.png"; sourceTree = "<group>"; };
-		6DC1A9DC22390A9D008D8283 /* 長方形 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "長方形 20.png"; sourceTree = "<group>"; };
 		6DF705012237ECD100FA8FE7 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
-		6DFC2522223B973E00C65113 /* camaraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camaraViewController.swift; sourceTree = "<group>"; };
 		AD1E9E5AAB2779B107D88A4B /* Pods-Famiee１.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Famiee１.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１.debug.xcconfig"; sourceTree = "<group>"; };
-		F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ckeckImageViewController.swift; sourceTree = "<group>"; };
 		F74608062246211C009F95BC /* Signature2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature2ViewController.swift; sourceTree = "<group>"; };
 		F746080822462792009F95BC /* SignedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedViewController.swift; sourceTree = "<group>"; };
 		F7814F932257342D00D5C5C9 /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
 		F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
 		F7814F952257342E00D5C5C9 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
-		F78B643E22460E780038D132 /* cer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cer.png; sourceTree = "<group>"; };
-		F7A95B02223E26ED00E92297 /* SmallBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SmallBtn(r).png"; sourceTree = "<group>"; };
-		F7A95B04223E278500E92297 /* largeBtn(r).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "largeBtn(r).png"; sourceTree = "<group>"; };
-		F7A95B06223E2A8800E92297 /* LargeBtn(p).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LargeBtn(p).png"; sourceTree = "<group>"; };
-		F7A95B07223E2A8900E92297 /* smallBtn(p).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smallBtn(p).png"; sourceTree = "<group>"; };
-		F7A95B0A223E2F7200E92297 /* LargeRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LargeRed.png; sourceTree = "<group>"; };
 		F7A95B0C223E311B00E92297 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F7A95B0E223E339F00E92297 /* checkoff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkoff.jpg; sourceTree = "<group>"; };
 		F7A95B0F223E339F00E92297 /* checkon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkon.jpg; sourceTree = "<group>"; };
@@ -104,13 +86,13 @@
 		F7D7029622468A0E00027497 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
 		F7DC95CC2246198E0080AB6B /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 		F7E36E7C226B234700E967E8 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
-		F7F445BD2261ABF300426A15 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		F7E475CC22717B9100D2D1A5 /* PhtotoWithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhtotoWithViewController.swift; sourceTree = "<group>"; };
+		F7E475CE2271837900D2D1A5 /* PhotocheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotocheckViewController.swift; sourceTree = "<group>"; };
+		F7E475D02271855A00D2D1A5 /* PhotocerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotocerViewController.swift; sourceTree = "<group>"; };
 		F7FF134A2265B8770089610E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		F7FF134C2265B9430089610E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		F7FF134E2265C4BC0089610E /* shortButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shortButton.png; sourceTree = "<group>"; };
 		F7FF134F2265C4BC0089610E /* longButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longButton.png; sourceTree = "<group>"; };
-		F7FF13522265F3A30089610E /* oneperson.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oneperson.svg; sourceTree = "<group>"; };
-		F7FF13542265F3EE0089610E /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,34 +142,24 @@
 		6D18FD402237B76E00F68DA4 /* Famiee１ */ = {
 			isa = PBXGroup;
 			children = (
+				F7E475CB22717B5400D2D1A5 /* Photo */,
 				6D18FD452237B76E00F68DA4 /* Main.storyboard */,
 				F7E36E7C226B234700E967E8 /* PlaceHolderTextView.swift */,
 				F7BCD164226F022500A85155 /* Certification.png */,
 				F7BADF3922685564001D2296 /* background.png */,
 				6D18FD542237B82600F68DA4 /* Famiee.png */,
 				6DC1A9DA22390A9D008D8283 /* back logo.png */,
-				6DC1A9DC22390A9D008D8283 /* 長方形 20.png */,
 				F7FF134F2265C4BC0089610E /* longButton.png */,
 				F7FF134E2265C4BC0089610E /* shortButton.png */,
 				F7FF134C2265B9430089610E /* button.png */,
 				6D776B462239183600A73D30 /* backgraund1.png */,
-				F7A95B06223E2A8800E92297 /* LargeBtn(p).png */,
-				F7A95B0A223E2F7200E92297 /* LargeRed.png */,
-				F7A95B07223E2A8900E92297 /* smallBtn(p).png */,
-				F78B643E22460E780038D132 /* cer.png */,
-				F7A95B04223E278500E92297 /* largeBtn(r).png */,
-				F7A95B02223E26ED00E92297 /* SmallBtn(r).png */,
 				F7FF134A2265B8770089610E /* image.png */,
 				F7A95B0E223E339F00E92297 /* checkoff.jpg */,
-				F7F445BD2261ABF300426A15 /* bg.png */,
 				F7A95B0F223E339F00E92297 /* checkon.jpg */,
-				F7FF13542265F3EE0089610E /* one.png */,
-				F7FF13522265F3A30089610E /* oneperson.svg */,
 				F7D7029622468A0E00027497 /* animation.json */,
 				6DC1A9D82239090B008D8283 /* UIcolor.swift */,
 				6D18FD412237B76E00F68DA4 /* AppDelegate.swift */,
 				F7BD73AF22462D9600B3B6C1 /* checkSignViewController.swift */,
-				F7024D3D223E4CD2006C1869 /* ckeckImageViewController.swift */,
 				6D18FD432237B76E00F68DA4 /* ViewController.swift */,
 				6D18FD5B2237BF0100F68DA4 /* ChikaiViewController.swift */,
 				6DF705012237ECD100FA8FE7 /* CheckViewController.swift */,
@@ -196,7 +168,6 @@
 				6D776B4822391C1200A73D30 /* Check2ViewController.swift */,
 				6D776B4C223922AE00A73D30 /* HakkouViewController.swift */,
 				F7A95B12223E414300E92297 /* PrintViewController.swift */,
-				6DFC2522223B973E00C65113 /* camaraViewController.swift */,
 				F746080822462792009F95BC /* SignedViewController.swift */,
 				F74608062246211C009F95BC /* Signature2ViewController.swift */,
 				F7A95B0C223E311B00E92297 /* CheckBox.swift */,
@@ -217,6 +188,16 @@
 				13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7E475CB22717B5400D2D1A5 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F7E475CC22717B9100D2D1A5 /* PhtotoWithViewController.swift */,
+				F7E475CE2271837900D2D1A5 /* PhotocheckViewController.swift */,
+				F7E475D02271855A00D2D1A5 /* PhotocerViewController.swift */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,28 +262,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FF13532265F3A30089610E /* oneperson.svg in Resources */,
 				F7A95B11223E339F00E92297 /* checkon.jpg in Resources */,
 				F7FF134D2265B9450089610E /* button.png in Resources */,
-				F7A95B08223E2A8900E92297 /* LargeBtn(p).png in Resources */,
-				F7F445BE2261ABF500426A15 /* bg.png in Resources */,
 				6D18FD4C2237B77000F68DA4 /* LaunchScreen.storyboard in Resources */,
 				F7BCD165226F022600A85155 /* Certification.png in Resources */,
 				F7BADF3A22685568001D2296 /* background.png in Resources */,
 				F7FF13512265C4BC0089610E /* longButton.png in Resources */,
 				F7D7029722468A0F00027497 /* animation.json in Resources */,
-				F7A95B03223E26ED00E92297 /* SmallBtn(r).png in Resources */,
-				F78B643F22460E790038D132 /* cer.png in Resources */,
-				6DC1A9DF22390A9D008D8283 /* 長方形 20.png in Resources */,
 				6D18FD562237B82700F68DA4 /* Famiee.png in Resources */,
-				F7FF13552265F3F30089610E /* one.png in Resources */,
 				6DC1A9DD22390A9D008D8283 /* back logo.png in Resources */,
-				F7A95B0B223E2F7300E92297 /* LargeRed.png in Resources */,
 				F7A95B10223E339F00E92297 /* checkoff.jpg in Resources */,
 				F7FF134B2265B8790089610E /* image.png in Resources */,
-				F7A95B05223E278500E92297 /* largeBtn(r).png in Resources */,
 				F7FF13502265C4BC0089610E /* shortButton.png in Resources */,
-				F7A95B09223E2A8900E92297 /* smallBtn(p).png in Resources */,
 				6D18FD492237B77000F68DA4 /* Assets.xcassets in Resources */,
 				6D776B472239183600A73D30 /* backgraund1.png in Resources */,
 				6D18FD472237B76E00F68DA4 /* Main.storyboard in Resources */,
@@ -387,22 +358,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFC2523223B973E00C65113 /* camaraViewController.swift in Sources */,
 				6D246EB0223A796F00004C7E /* Chikai2ViewController.swift in Sources */,
 				6D18FD442237B76E00F68DA4 /* ViewController.swift in Sources */,
 				6D776B4922391C1200A73D30 /* Check2ViewController.swift in Sources */,
-				F7024D3E223E4CD2006C1869 /* ckeckImageViewController.swift in Sources */,
 				F7DC95CD2246198E0080AB6B /* SignatureViewController.swift in Sources */,
+				F7E475CF2271837900D2D1A5 /* PhotocheckViewController.swift in Sources */,
 				F7BD73B022462D9600B3B6C1 /* checkSignViewController.swift in Sources */,
 				F7D702952246897900027497 /* AnimeViewController.swift in Sources */,
 				F7A95B0D223E311B00E92297 /* CheckBox.swift in Sources */,
 				F746080922462792009F95BC /* SignedViewController.swift in Sources */,
 				F7E36E7D226B234700E967E8 /* PlaceHolderTextView.swift in Sources */,
+				F7E475D12271855A00D2D1A5 /* PhotocerViewController.swift in Sources */,
 				6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */,
 				F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */,
 				6D18FD5C2237BF0100F68DA4 /* ChikaiViewController.swift in Sources */,
 				6D18FD422237B76E00F68DA4 /* AppDelegate.swift in Sources */,
 				6DC1A9D92239090B008D8283 /* UIcolor.swift in Sources */,
+				F7E475CD22717B9100D2D1A5 /* PhtotoWithViewController.swift in Sources */,
 				6D776B4D223922AE00A73D30 /* HakkouViewController.swift in Sources */,
 				F7A95B13223E414500E92297 /* PrintViewController.swift in Sources */,
 				F7D70293224688C700027497 /* Bridging-Header.m in Sources */,

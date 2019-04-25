@@ -48,6 +48,7 @@ class ChikaiViewController: UIViewController,UITextViewDelegate,UITextFieldDeleg
         
     }
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()

@@ -17,10 +17,8 @@ class PrintViewController: UIViewController {
     
     @IBOutlet var firstname: UILabel!
     @IBOutlet var firstmessage: UILabel!
-    @IBOutlet var secoundname: UILabel!
     @IBOutlet var secoundmessage: UILabel!
     @IBOutlet var pass: UILabel!
-    @IBOutlet var TxID: UILabel!
     @IBOutlet var qrImage: UIImageView!
     
     
@@ -30,14 +28,14 @@ class PrintViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         overView.layer.cornerRadius = 40
-        underView.layer.cornerRadius = 40
+        underView.layer.cornerRadius = 5
         
         let firstName = UserDefaults.standard.object(forKey: "Name") as! String
-        firstname.text = firstName
+        let secoundName = UserDefaults.standard.object(forKey: "Name2Text") as! String
+        firstname.text = "\(firstName)&\(secoundName)"
         let firstMessage = UserDefaults.standard.object(forKey: "Message") as! String
         firstmessage.text = firstMessage
-        let secoundName = UserDefaults.standard.object(forKey: "Name2Text") as! String
-        secoundname.text = secoundName
+        
         let secoundMessage = UserDefaults.standard.object(forKey: "Message2") as! String
         secoundmessage.text = secoundMessage
         
@@ -47,8 +45,7 @@ class PrintViewController: UIViewController {
         let imagedata2 = UserDefaults.standard.object(forKey: "Sign2Image")
         sign2.image = UIImage(data: imagedata2 as! Data)
         
-//        TxID.text = UserDefaults.standard.object(forKey: "TxID") as! String
-//        pass.text = UserDefaults.standard.object(forKey: "key") as! String
+        pass.text = "パスワード:\(UserDefaults.standard.object(forKey: "key") as! String)"
         
         
         UIGraphicsBeginImageContextWithOptions(underView.frame.size, false, 1)
@@ -76,10 +73,8 @@ class PrintViewController: UIViewController {
         printButton.addTarget(self, action: #selector(self.showPrinterView(_:)), for: .touchUpInside)
         self.view.addSubview(printButton)
         
-//        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
-//        let url = "https://ropsten.etherscan.io/tx/\(txid)"
-        
-        let url = "https://ropsten.etherscan.io/tx"
+        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
+        let url = "https://etherscan.io/tx/\(txid)"
         // NSString から NSDataへ変換
         let data = url.data(using: String.Encoding.utf8)!
         
@@ -94,6 +89,11 @@ class PrintViewController: UIViewController {
         
         qrImage.image = UIImage(ciImage: qrImages)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        (UINavigationBar.appearance() as UINavigationBar).setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
     }
     // 印刷ページを表示する
     @objc func showPrinterView(_ sender: UIButton) -> Void {

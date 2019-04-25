@@ -44,6 +44,11 @@ class SignedViewController: UIViewController {
         sign2.image = UIImage(data: imagedata2 as! Data)
     }
     
+    @IBAction func `return`(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
     
     @IBAction func done(_ sender: Any) {
         UIGraphicsBeginImageContextWithOptions(box.frame.size, false, 1)
