@@ -1449,7 +1449,7 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
                                                         <attributes>
-                                                            <font key="NSFont" size="18" name="HiraMinProN-W3"/>
+                                                            <font key="NSFont" size="18" name="TsukuARdGothic-Bold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -3988,7 +3988,7 @@
                                     <constraint firstAttribute="height" constant="60" id="cj5-jd-d8n"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="おひとりめの方">
+                                    <fragment content="おふたりめの方">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="40" name="HiraMinProN-W3"/>
@@ -4535,7 +4535,8 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
                                                         <attributes>
-                                                            <font key="NSFont" size="18" name="HiraMinProN-W3"/>
+                                                            <font key="NSFont" size="18" name="TsukuARdGothic-Bold"/>
+                                                            <font key="NSOriginalFont" size="18" name="TsukuARdGothic-Bold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -5515,7 +5516,8 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
                                                         <attributes>
-                                                            <font key="NSFont" size="18" name="HiraMinProN-W3"/>
+                                                            <font key="NSFont" size="18" name="TsukuARdGothic-Bold"/>
+                                                            <font key="NSOriginalFont" size="18" name="TsukuARdGothic-Bold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
