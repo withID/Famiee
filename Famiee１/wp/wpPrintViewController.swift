@@ -57,7 +57,7 @@ class wpPrintViewController: UIViewController {
                 pass.text = "パスワード : \(UserDefaults.standard.object(forKey: "key") as! String)"
             }
             let txid = UserDefaults.standard.object(forKey: "TxID") as! String
-            let url = "https://etherscan.io/tx/\(txid)"
+            let url = "https://famieepj.herokuapp.com/\(txid)"
             // NSString から NSDataへ変換
             let data = url.data(using: String.Encoding.utf8)!
             

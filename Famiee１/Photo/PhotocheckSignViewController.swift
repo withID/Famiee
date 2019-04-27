@@ -18,7 +18,7 @@ import CryptoSwift
         var firstName = UserDefaults.standard.object(forKey: "name1") as! String
         var secoundName = UserDefaults.standard.object(forKey: "name2") as! String
         var ciphertext = Array<UInt8>()
-        
+        var cipher = String()
         override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -36,7 +36,7 @@ import CryptoSwift
         @IBAction func Write(_ sender: Any) {
             
             let key = randomString(length: 16)
-            let vi = "abcdefghijklmnop"
+            let iv = "0000000000000000"
             let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0b0c0d0e0f"))
             
             let seed = try! Mnemonic.createSeed(mnemonic: mnemonic)
@@ -78,22 +78,21 @@ import CryptoSwift
                     
                     do {
                         
-                        let aes = try AES(key: key, iv: vi)
                         print(key)
-                        print(vi)
+                        print(iv)
                         // aes128
-                        self.ciphertext = try aes.encrypt(Array("\(self.firstName)と\(self.secoundName)は、カップルであることを誓いました。".utf8))
-                        print(self.ciphertext)
-                        let data0 = NSData(bytes: self.ciphertext, length: self.ciphertext.count)
-                        let string0 = String(data: data0 as Data, encoding: .utf8)
-                        print(string0 as Any)
-                        
-                        let decrypt =  try aes.decrypt(self.ciphertext)
-                        print("複合化したよ\(decrypt)")
-                        
-                        let data = NSData(bytes: decrypt, length: decrypt.count)
-                        let string = String(data: data as Data, encoding: .utf8)
-                        print(string as Any)
+//                        self.ciphertext = try aes.encrypt(Array("\(self.firstName)と\(self.secoundName)は、カップルであることを誓いました。".utf8))
+//                        print(self.ciphertext)
+//                        let data0 = NSData(bytes: self.ciphertext, length: self.ciphertext.count)
+//                        let string0 = String(data: data0 as Data, encoding: .utf8)
+//                        print(string0 as Any)
+//
+//                        let decrypt =  try aes.decrypt(self.ciphertext)
+//                        print("複合化したよ\(decrypt)")
+//
+//                        let data = NSData(bytes: decrypt, length: decrypt.count)
+//                        let string = String(data: data as Data, encoding: .utf8)
+//                        print(string as Any)
                         
                         
                         
@@ -104,10 +103,11 @@ import CryptoSwift
                     if UserDefaults.standard.object(forKey: "check") as! String == "" {
                         
                         //メッセージの内容
-                        let cipher = "\(self.firstName)と\(self.secoundName)は、カップルであることを誓いました。"
-                        print(cipher)
-                        let data: Data? =  cipher.data(using: .utf8)
+                        self.cipher = "\(self.firstName)と\(self.secoundName)は、カップルであることを誓いました。"
+                        print(self.cipher)
+                        let data: Data? =  self.cipher.data(using: .utf8)
                         print(data)
+
                         
                         
                         let rawTransaction = RawTransaction(wei: "0", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 120000, nonce: nonce, data: data!)
@@ -142,10 +142,28 @@ import CryptoSwift
                         
                     }else{
                         
+                        //メッセージの内容(暗号化)
+                        let bytes = [UInt8]("\(self.firstName)と\(self.secoundName)は、カップルであることを誓いました。".utf8)
+                        
+                        print("初め\(bytes)")
+                        
+                        
+                        do {
+                            let aes = try AES(key: key, iv: iv)
+                            let encrypted = try aes.encrypt(bytes)
+                            print("暗号化したあと\(encrypted)")
+                            let encryptedData = NSData(bytes:encrypted, length:encrypted.count)
+                            let sendData = NSMutableData(bytes: iv, length: iv.count)
+                            sendData.append(encryptedData as Data)
+                            let sendDataBase64 = sendData.base64EncodedString(options: NSData.Base64EncodingOptions())
+                            print(sendDataBase64)
+                            self.cipher = "\(sendDataBase64)"
+                        } catch let error as NSError {
+                            debugPrint(error)
+                        }
                         //メッセージの内容
-                        let cipher = "\(self.ciphertext)"
-                        print(cipher)
-                        let data: Data? =  cipher.data(using: .utf8)
+                        print(self.cipher)
+                        let data: Data? =  self.cipher.data(using: .utf8)
                         print(data)
                         
                         let rawTransaction = RawTransaction(wei: "0", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 120000, nonce: nonce, data: data!)

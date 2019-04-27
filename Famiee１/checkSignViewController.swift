@@ -36,7 +36,7 @@ class checkSignViewController: UIViewController {
     @IBAction func Write(_ sender: Any) {
         
         let key = randomString(length: 16)
-        let iv = "abcdefghijklmnop"
+        let iv = "0000000000000000"
 //        let iv:[UInt8] = AES.randomIV(AES.blockSize)
         let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0b0c0d0e0f"))
         
@@ -125,7 +125,17 @@ class checkSignViewController: UIViewController {
                             print(transaction.id)
                             UserDefaults.standard.set(transaction.id, forKey: "TxID")
                         case .failure(_):
-                            print("トランザクションを遅れていない")
+                            print("署名ができていない遅れていない")
+                            let title = "エラー"
+                            let message = "保存に失敗しました"
+                            
+                            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                            
+                            // OKボタンを追加
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                            
+                            // UIAlertController を表示
+                            self.present(alert, animated: true, completion: nil)
                         }
                     }
 
@@ -169,7 +179,7 @@ class checkSignViewController: UIViewController {
                             print(transaction.id)
                             UserDefaults.standard.set(transaction.id, forKey: "TxID")
                         case .failure(_):
-                            print("トランザクションを遅れていない")
+                            print("トランザクションを遅れていない1")
                             
                             let title = "エラー"
                             let message = "保存に失敗しました"
@@ -188,7 +198,7 @@ class checkSignViewController: UIViewController {
 
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
-                print("トランザクションを遅れていない")
+                print("トランザクションを遅れていない2")
                 
                 let title = "エラー"
                 let message = "保存に失敗しました"
