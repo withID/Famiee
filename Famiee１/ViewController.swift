@@ -24,28 +24,21 @@ UINavigationControllerDelegate {
         let myBackButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = myBackButton
         
+        UserDefaults.standard.set("false", forKey: "Photo")
+        
     }
     
     @IBAction func changeI(_ sender: Any) {
         
           tappedcamera()
-//        let actionSheet = UIAlertController(title: "", message: "プロフィール写真を設定します", preferredStyle: UIAlertController.Style.actionSheet)
-//
-//        let tappedcamera = UIAlertAction(title: "カメラで撮影する", style: UIAlertAction.Style.default, handler: {
-//            (action: UIAlertAction!) in
-//            self.tappedcamera()
-//        })
-//
-//
-//        let cancel = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler: {
-//            (action: UIAlertAction!) in
-//            print("キャンセル")
-//        })
-//
-//        actionSheet.addAction(tappedcamera)
-//        actionSheet.addAction(cancel)
-//        actionSheet.popoverPresentationController?.sourceView = self.view
-//        present(actionSheet, animated: true, completion: nil)
+
+    }
+    
+    
+    @IBAction func changeII(_ sender: Any) {
+        UserDefaults.standard.set("true", forKey: "Photo")
+        
+        tappedcamera()
     }
     
     func imagePickerController(_ imagePicker: UIImagePickerController,
@@ -113,13 +106,26 @@ UINavigationControllerDelegate {
             UIGraphicsEndImageContext()
             let pngData = capturedImage.pngData()!
             //このImageは円形で余白は透過です。
-//            UserImageView.image = png
-            UserDefaults.standard.set(pngData, forKey: "userImage")
-            //                    self.ActivityIndicator.stopAnimating()
-            let PhtotoWithViewController = self.storyboard?.instantiateViewController(withIdentifier: "Photowith") as! PhtotoWithViewController
             
-            self.navigationController?.pushViewController(PhtotoWithViewController, animated: true)
-            dismiss(animated: true, completion: nil)
+            UserDefaults.standard.set(pngData, forKey: "userImage")
+            
+            if UserDefaults.standard.object(forKey: "Photo") as! String == "true" {
+                
+                let ChikaiViewController = self.storyboard?.instantiateViewController(withIdentifier: "vcV") as! ChikaiViewController
+                
+                self.navigationController?.pushViewController(ChikaiViewController, animated: true)
+                dismiss(animated: true, completion: nil)
+                
+                
+            }else{
+                
+                let PhtotoWithViewController = self.storyboard?.instantiateViewController(withIdentifier: "Photowith") as! PhtotoWithViewController
+                
+                self.navigationController?.pushViewController(PhtotoWithViewController, animated: true)
+                dismiss(animated: true, completion: nil)
+                
+            }
+            
             
         }
     }

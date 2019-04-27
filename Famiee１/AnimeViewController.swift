@@ -32,7 +32,7 @@ class AnimeViewController: UIViewController {
     @objc func changeView() {
         
         let PrintViewController = self.storyboard?.instantiateViewController(withIdentifier: "toLastPage") as! PrintViewController
-        self.navigationController?.pushViewController(PrintViewController, animated: true)
+        self.navigationController?.present(PrintViewController, animated: true)
         
         print("ここまで言ってる")
     }

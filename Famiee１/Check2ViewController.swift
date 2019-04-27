@@ -29,6 +29,21 @@ class Check2ViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func nextBtn(_ sender: Any) {
+        
+        if UserDefaults.standard.object(forKey: "Photo") as! String == "true" {
+            
+            let wPhotoHaViewController = self.storyboard?.instantiateViewController(withIdentifier: "wpVC") as! wPhotoHaViewController
+            self.navigationController?.pushViewController(wPhotoHaViewController, animated: true)
+            
+            
+        }else{
+            
+            let HakkouViewController = self.storyboard?.instantiateViewController(withIdentifier: "HakkouVC") as! HakkouViewController
+            self.navigationController?.pushViewController(HakkouViewController, animated: true)
+            
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

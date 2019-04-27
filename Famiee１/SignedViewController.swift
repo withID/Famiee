@@ -30,7 +30,7 @@ class SignedViewController: UIViewController {
         let firstName = UserDefaults.standard.object(forKey: "Name") as! String
         let secoundName = UserDefaults.standard.object(forKey: "Name2Text") as! String
         
-        firstname.text = "\(firstName)&\(secoundName)"
+        firstname.text = "\(firstName) & \(secoundName)"
         let firstMessage = UserDefaults.standard.object(forKey: "Message") as! String
         firstmessage.text = firstMessage
         

@@ -13,11 +13,16 @@ class PhtotoWithViewController: UIViewController,UITextViewDelegate,UITextFieldD
     @IBOutlet var name1: UITextField!
     @IBOutlet var name2: UITextField!
     @IBOutlet var checkedBtn: UIButton!
+    @IBOutlet var flame: UIView!
+    @IBOutlet var flame2: UIView!
     
     var isChecked = true
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        flame.layer.cornerRadius = 5
+        flame2.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
     
@@ -25,12 +30,27 @@ class PhtotoWithViewController: UIViewController,UITextViewDelegate,UITextFieldD
     
     @IBAction func nextBtn(_ sender: Any) {
         
-         let PhotocheckViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoVC") as! PhotocheckViewController
-        
-        PhotocheckViewController.name1 = name1.text!
-        PhotocheckViewController.name2 = name2.text!
         UserDefaults.standard.set(name1.text, forKey: "name1")
         UserDefaults.standard.set(name2.text, forKey: "name2")
+        
+         if isChecked == false {
+            
+            UserDefaults.standard.set("", forKey: "check")
+            //暗号化しない
+            let PhotocheckViewController = self.storyboard?.instantiateViewController(withIdentifier: "photokVC") as! PhotocheckViewController
+            self.navigationController?.pushViewController(PhotocheckViewController, animated: true)
+            
+         }else{
+        
+            UserDefaults.standard.set("check", forKey: "check")
+            //暗号化する
+            let PhotocheckViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoVC") as! PhotocheckViewController
+            self.navigationController?.pushViewController(PhotocheckViewController, animated: true)
+            
+        }
+         let PhotocheckViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoVC") as! PhotocheckViewController
+        
+      
     }
     @IBAction func checkView(_ sender: Any) {
         
@@ -61,5 +81,7 @@ class PhtotoWithViewController: UIViewController,UITextViewDelegate,UITextFieldD
         name2.resignFirstResponder()
         
     }
+    
+    
 
 }

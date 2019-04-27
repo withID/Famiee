@@ -25,7 +25,7 @@ class PhotocheckViewController: UIViewController {
         self.navigationItem.backBarButtonItem = myBackButton
         
         name1Label.text = UserDefaults.standard.object(forKey: "name1") as! String
-        name2Label.text = UserDefaults.standard.object(forKey: "name1") as! String
+        name2Label.text = UserDefaults.standard.object(forKey: "name2") as! String
     }
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

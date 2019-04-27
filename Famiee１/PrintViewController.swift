@@ -32,7 +32,7 @@ class PrintViewController: UIViewController {
         
         let firstName = UserDefaults.standard.object(forKey: "Name") as! String
         let secoundName = UserDefaults.standard.object(forKey: "Name2Text") as! String
-        firstname.text = "\(firstName)&\(secoundName)"
+        firstname.text = "\(firstName) & \(secoundName)"
         let firstMessage = UserDefaults.standard.object(forKey: "Message") as! String
         firstmessage.text = firstMessage
         
@@ -45,10 +45,34 @@ class PrintViewController: UIViewController {
         let imagedata2 = UserDefaults.standard.object(forKey: "Sign2Image")
         sign2.image = UIImage(data: imagedata2 as! Data)
         
-        pass.text = "パスワード:\(UserDefaults.standard.object(forKey: "key") as! String)"
+        if UserDefaults.standard.object(forKey: "check") as! String == "" {
+            pass.text = "パスワード : \(UserDefaults.standard.object(forKey: "key") as! String)"
+            pass.alpha = 0
+            
+        }else{
+            
+            pass.text = "パスワード : \(UserDefaults.standard.object(forKey: "key") as! String)"
+        }
+       
+        
+        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
+        let url = "https://etherscan.io/tx/\(txid)"
+        // NSString から NSDataへ変換
+        let data = url.data(using: String.Encoding.utf8)!
+        
+        // QRコード生成のフィルター
+        // NSData型でデーターを用意
+        // inputCorrectionLevelは、誤り訂正レベル
+        let qr = CIFilter(name: "CIQRCodeGenerator", parameters: ["inputMessage": data, "inputCorrectionLevel": "M"])!
         
         
-        UIGraphicsBeginImageContextWithOptions(underView.frame.size, false, 1)
+        let sizeTransform = CGAffineTransform(scaleX: 10, y: 10)
+        let qrImages = qr.outputImage!.transformed(by: sizeTransform)
+        
+        qrImage.image = UIImage(ciImage: qrImages)
+        
+        
+        UIGraphicsBeginImageContextWithOptions(underView.frame.size, false, 0.0)
         
         underView.layer.render(in: UIGraphicsGetCurrentContext()!)
         image = UIGraphicsGetImageFromCurrentImageContext()!
@@ -73,22 +97,6 @@ class PrintViewController: UIViewController {
         printButton.addTarget(self, action: #selector(self.showPrinterView(_:)), for: .touchUpInside)
         self.view.addSubview(printButton)
         
-        let txid = UserDefaults.standard.object(forKey: "TxID") as! String
-        let url = "https://etherscan.io/tx/\(txid)"
-        // NSString から NSDataへ変換
-        let data = url.data(using: String.Encoding.utf8)!
-        
-        // QRコード生成のフィルター
-        // NSData型でデーターを用意
-        // inputCorrectionLevelは、誤り訂正レベル
-        let qr = CIFilter(name: "CIQRCodeGenerator", parameters: ["inputMessage": data, "inputCorrectionLevel": "M"])!
-        
-        
-        let sizeTransform = CGAffineTransform(scaleX: 10, y: 10)
-        let qrImages = qr.outputImage!.transformed(by: sizeTransform)
-        
-        qrImage.image = UIImage(ciImage: qrImages)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -108,6 +116,32 @@ class PrintViewController: UIViewController {
         printController.printingItem = self.printingImage
         
         printController.present(animated: true, completionHandler: nil)
+        
     }
+
+    @IBAction func savePhoto(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.showResultOfSaveImage(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
+// 保存を試みた結果をダイアログで表示
+    @objc func showResultOfSaveImage(_ image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
+    
+    var title = "保存完了"
+    var message = "カメラロールに保存しました"
+    
+    if error != nil {
+        title = "エラー"
+        message = "保存に失敗しました"
+    }
+    
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    
+    // OKボタンを追加
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+    // UIAlertController を表示
+    self.present(alert, animated: true, completion: nil)
+}
+
     
 }

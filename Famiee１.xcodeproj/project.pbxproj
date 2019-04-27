@@ -24,6 +24,16 @@
 		F743978110051985A24A775A /* Pods_Famiee_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B14AD2333A7FCEEF256F34 /* Pods_Famiee_.framework */; };
 		F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74608062246211C009F95BC /* Signature2ViewController.swift */; };
 		F746080922462792009F95BC /* SignedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746080822462792009F95BC /* SignedViewController.swift */; };
+		F7502C2E2272B6BA00CAB3EE /* smallBtn(p).png in Resources */ = {isa = PBXBuildFile; fileRef = F7502C2D2272B6B900CAB3EE /* smallBtn(p).png */; };
+		F7502C322272CBA300CAB3EE /* Cetificate.png in Resources */ = {isa = PBXBuildFile; fileRef = F7502C312272CBA300CAB3EE /* Cetificate.png */; };
+		F7502C342273038700CAB3EE /* PhotoSignedViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C332273038700CAB3EE /* PhotoSignedViewControllerViewController.swift */; };
+		F7502C3622730D4D00CAB3EE /* PhotocheckSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C3522730D4D00CAB3EE /* PhotocheckSignViewController.swift */; };
+		F7502C3822730E2D00CAB3EE /* PhotoPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C3722730E2D00CAB3EE /* PhotoPrintViewController.swift */; };
+		F7502C3A2273113700CAB3EE /* PhotoAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C392273113700CAB3EE /* PhotoAnimationViewController.swift */; };
+		F7502C3C227319BF00CAB3EE /* wPhotoHaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C3B227319BF00CAB3EE /* wPhotoHaViewController.swift */; };
+		F7502C3E22731AC400CAB3EE /* wPSIgnedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C3D22731AC400CAB3EE /* wPSIgnedViewController.swift */; };
+		F7502C4022731B9D00CAB3EE /* wpAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C3F22731B9C00CAB3EE /* wpAnimateViewController.swift */; };
+		F7502C4222731C3800CAB3EE /* wpPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7502C4122731C3800CAB3EE /* wpPrintViewController.swift */; };
 		F7814F962257342E00D5C5C9 /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F932257342D00D5C5C9 /* EthereumKit.framework */; };
 		F7814F972257342E00D5C5C9 /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */; };
 		F7814F982257342E00D5C5C9 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7814F952257342E00D5C5C9 /* CryptoSwift.framework */; };
@@ -70,6 +80,16 @@
 		AD1E9E5AAB2779B107D88A4B /* Pods-Famiee１.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Famiee１.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Famiee１/Pods-Famiee１.debug.xcconfig"; sourceTree = "<group>"; };
 		F74608062246211C009F95BC /* Signature2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature2ViewController.swift; sourceTree = "<group>"; };
 		F746080822462792009F95BC /* SignedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedViewController.swift; sourceTree = "<group>"; };
+		F7502C2D2272B6B900CAB3EE /* smallBtn(p).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smallBtn(p).png"; sourceTree = "<group>"; };
+		F7502C312272CBA300CAB3EE /* Cetificate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cetificate.png; sourceTree = "<group>"; };
+		F7502C332273038700CAB3EE /* PhotoSignedViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSignedViewControllerViewController.swift; sourceTree = "<group>"; };
+		F7502C3522730D4D00CAB3EE /* PhotocheckSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotocheckSignViewController.swift; sourceTree = "<group>"; };
+		F7502C3722730E2D00CAB3EE /* PhotoPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPrintViewController.swift; sourceTree = "<group>"; };
+		F7502C392273113700CAB3EE /* PhotoAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAnimationViewController.swift; sourceTree = "<group>"; };
+		F7502C3B227319BF00CAB3EE /* wPhotoHaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wPhotoHaViewController.swift; sourceTree = "<group>"; };
+		F7502C3D22731AC400CAB3EE /* wPSIgnedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wPSIgnedViewController.swift; sourceTree = "<group>"; };
+		F7502C3F22731B9C00CAB3EE /* wpAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wpAnimateViewController.swift; sourceTree = "<group>"; };
+		F7502C4122731C3800CAB3EE /* wpPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wpPrintViewController.swift; sourceTree = "<group>"; };
 		F7814F932257342D00D5C5C9 /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
 		F7814F942257342D00D5C5C9 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
 		F7814F952257342E00D5C5C9 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
@@ -142,9 +162,12 @@
 		6D18FD402237B76E00F68DA4 /* Famiee１ */ = {
 			isa = PBXGroup;
 			children = (
+				F7502C43227327EB00CAB3EE /* wp */,
 				F7E475CB22717B5400D2D1A5 /* Photo */,
 				6D18FD452237B76E00F68DA4 /* Main.storyboard */,
 				F7E36E7C226B234700E967E8 /* PlaceHolderTextView.swift */,
+				F7502C312272CBA300CAB3EE /* Cetificate.png */,
+				F7502C2D2272B6B900CAB3EE /* smallBtn(p).png */,
 				F7BCD164226F022500A85155 /* Certification.png */,
 				F7BADF3922685564001D2296 /* background.png */,
 				6D18FD542237B82600F68DA4 /* Famiee.png */,
@@ -190,12 +213,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F7502C43227327EB00CAB3EE /* wp */ = {
+			isa = PBXGroup;
+			children = (
+				F7502C4122731C3800CAB3EE /* wpPrintViewController.swift */,
+				F7502C3B227319BF00CAB3EE /* wPhotoHaViewController.swift */,
+				F7502C3D22731AC400CAB3EE /* wPSIgnedViewController.swift */,
+				F7502C3F22731B9C00CAB3EE /* wpAnimateViewController.swift */,
+			);
+			path = wp;
+			sourceTree = "<group>";
+		};
 		F7E475CB22717B5400D2D1A5 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				F7502C332273038700CAB3EE /* PhotoSignedViewControllerViewController.swift */,
 				F7E475CC22717B9100D2D1A5 /* PhtotoWithViewController.swift */,
 				F7E475CE2271837900D2D1A5 /* PhotocheckViewController.swift */,
 				F7E475D02271855A00D2D1A5 /* PhotocerViewController.swift */,
+				F7502C3722730E2D00CAB3EE /* PhotoPrintViewController.swift */,
+				F7502C392273113700CAB3EE /* PhotoAnimationViewController.swift */,
+				F7502C3522730D4D00CAB3EE /* PhotocheckSignViewController.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -262,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7502C2E2272B6BA00CAB3EE /* smallBtn(p).png in Resources */,
 				F7A95B11223E339F00E92297 /* checkon.jpg in Resources */,
 				F7FF134D2265B9450089610E /* button.png in Resources */,
 				6D18FD4C2237B77000F68DA4 /* LaunchScreen.storyboard in Resources */,
@@ -274,6 +313,7 @@
 				F7A95B10223E339F00E92297 /* checkoff.jpg in Resources */,
 				F7FF134B2265B8790089610E /* image.png in Resources */,
 				F7FF13502265C4BC0089610E /* shortButton.png in Resources */,
+				F7502C322272CBA300CAB3EE /* Cetificate.png in Resources */,
 				6D18FD492237B77000F68DA4 /* Assets.xcassets in Resources */,
 				6D776B472239183600A73D30 /* backgraund1.png in Resources */,
 				6D18FD472237B76E00F68DA4 /* Main.storyboard in Resources */,
@@ -363,12 +403,15 @@
 				6D776B4922391C1200A73D30 /* Check2ViewController.swift in Sources */,
 				F7DC95CD2246198E0080AB6B /* SignatureViewController.swift in Sources */,
 				F7E475CF2271837900D2D1A5 /* PhotocheckViewController.swift in Sources */,
+				F7502C3622730D4D00CAB3EE /* PhotocheckSignViewController.swift in Sources */,
 				F7BD73B022462D9600B3B6C1 /* checkSignViewController.swift in Sources */,
 				F7D702952246897900027497 /* AnimeViewController.swift in Sources */,
 				F7A95B0D223E311B00E92297 /* CheckBox.swift in Sources */,
 				F746080922462792009F95BC /* SignedViewController.swift in Sources */,
 				F7E36E7D226B234700E967E8 /* PlaceHolderTextView.swift in Sources */,
 				F7E475D12271855A00D2D1A5 /* PhotocerViewController.swift in Sources */,
+				F7502C342273038700CAB3EE /* PhotoSignedViewControllerViewController.swift in Sources */,
+				F7502C3E22731AC400CAB3EE /* wPSIgnedViewController.swift in Sources */,
 				6DF705022237ECD100FA8FE7 /* CheckViewController.swift in Sources */,
 				F74608072246211C009F95BC /* Signature2ViewController.swift in Sources */,
 				6D18FD5C2237BF0100F68DA4 /* ChikaiViewController.swift in Sources */,
@@ -376,8 +419,13 @@
 				6DC1A9D92239090B008D8283 /* UIcolor.swift in Sources */,
 				F7E475CD22717B9100D2D1A5 /* PhtotoWithViewController.swift in Sources */,
 				6D776B4D223922AE00A73D30 /* HakkouViewController.swift in Sources */,
+				F7502C4222731C3800CAB3EE /* wpPrintViewController.swift in Sources */,
 				F7A95B13223E414500E92297 /* PrintViewController.swift in Sources */,
 				F7D70293224688C700027497 /* Bridging-Header.m in Sources */,
+				F7502C4022731B9D00CAB3EE /* wpAnimateViewController.swift in Sources */,
+				F7502C3C227319BF00CAB3EE /* wPhotoHaViewController.swift in Sources */,
+				F7502C3A2273113700CAB3EE /* PhotoAnimationViewController.swift in Sources */,
+				F7502C3822730E2D00CAB3EE /* PhotoPrintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
