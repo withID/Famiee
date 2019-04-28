@@ -143,5 +143,10 @@ class PrintViewController: UIViewController {
     self.present(alert, animated: true, completion: nil)
 }
 
+    @IBAction func dona(_ sender: Any) {
+        
+        let appDomain = Bundle.main.bundleIdentifier
+        UserDefaults.standard.removePersistentDomain(forName: appDomain!)
+    }
     
 }

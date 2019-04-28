@@ -1505,6 +1505,15 @@
                                             <action selector="savePhoto:" destination="i9y-aH-x4E" eventType="touchUpInside" id="lrc-BV-jfE"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djx-cA-NQA">
+                                        <rect key="frame" x="8" y="1641" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="dona:" destination="i9y-aH-x4E" eventType="touchUpInside" id="yc1-RY-PSz"/>
+                                            <action selector="done:" destination="eDG-Cg-YAl" eventType="touchUpInside" id="BPD-BU-44W"/>
+                                            <segue destination="GXl-DV-ufy" kind="presentation" id="6Mm-30-bKf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Z7G-sh-FgQ" firstAttribute="centerX" secondItem="kyJ-uR-IvC" secondAttribute="centerX" id="1s2-VM-vIo"/>
@@ -1556,7 +1565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTv-XY-ndY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11132.8125" y="20.80078125"/>
+            <point key="canvasLocation" x="330" y="1095"/>
         </scene>
         <!--Signature2 View Controller-->
         <scene sceneID="9Yi-nl-33T">
@@ -4583,6 +4592,14 @@
                                             <action selector="savePhoto:" destination="eDG-Cg-YAl" eventType="touchUpInside" id="Fyi-X6-H98"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qba-FW-Z53">
+                                        <rect key="frame" x="59" y="1720" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="done:" destination="eDG-Cg-YAl" eventType="touchUpInside" id="Or1-bl-Rwb"/>
+                                            <segue destination="GXl-DV-ufy" kind="presentation" id="KqQ-rh-LDc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="vc2-7X-Cif" firstAttribute="top" secondItem="NuU-cd-Ya3" secondAttribute="bottom" constant="45" id="8Ue-Kz-XYB"/>
@@ -4633,7 +4650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTr-JS-0YA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7832.8125" y="-874.51171875"/>
+            <point key="canvasLocation" x="388" y="-2193"/>
         </scene>
         <!--Photo Ha View Controller-->
         <scene sceneID="6Nv-mH-qdT">
@@ -5577,6 +5594,16 @@
                                             <action selector="savePhoto:" destination="cor-h5-f93" eventType="touchUpInside" id="HVY-xj-fgR"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-gt-hoZ">
+                                        <rect key="frame" x="29" y="1641" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="dona:" destination="i9y-aH-x4E" eventType="touchUpInside" id="b4c-1i-3rp"/>
+                                            <action selector="done:" destination="eDG-Cg-YAl" eventType="touchUpInside" id="sy1-o7-r6I"/>
+                                            <action selector="done:" destination="cor-h5-f93" eventType="touchUpInside" id="zKR-IE-gFv"/>
+                                            <segue destination="GXl-DV-ufy" kind="presentation" id="OJP-ne-SaW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="eix-GE-s3q" firstAttribute="top" secondItem="6Db-gg-4Jf" secondAttribute="bottom" constant="-11" id="9Z5-e6-zf3"/>
@@ -5629,7 +5656,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrl-Yg-peg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10890.625" y="1379.58984375"/>
+            <point key="canvasLocation" x="1366" y="1524"/>
         </scene>
     </scenes>
     <resources>
@@ -5650,5 +5677,6 @@
         <segue reference="9A3-Xs-JjP"/>
         <segue reference="byq-el-4Qu"/>
         <segue reference="jqz-ZF-BSq"/>
+        <segue reference="6Mm-30-bKf"/>
     </inferredMetricsTieBreakers>
 </document>

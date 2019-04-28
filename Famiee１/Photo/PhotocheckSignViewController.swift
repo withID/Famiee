@@ -43,8 +43,8 @@ import CryptoSwift
             
             let wallet: Wallet
             do {
-                //            wallet = try Wallet(seed: seed, network: .mainnet, debugPrints: true)
-                wallet = try Wallet(seed: seed, network: .ropsten, debugPrints: true)
+                    wallet = try Wallet(seed: seed, network: .mainnet, debugPrints: true)
+//                wallet = try Wallet(seed: seed, network: .ropsten, debugPrints: true)
             } catch let error {
                 fatalError("Error: \(error.localizedDescription)")
             }
@@ -53,10 +53,10 @@ import CryptoSwift
             let address = wallet.address()
             
             let configuration = Configuration(
-                //            network: .mainnet,
-                //            nodeEndpoint: "https://mainnet.infura.io/af0ac1adf1794a61a7458d6409c4c122",
-                network: .ropsten,
-                nodeEndpoint: "https://ropsten.infura.io/af0ac1adf1794a61a7458d6409c4c122",
+                network: .mainnet,
+                nodeEndpoint: "https://mainnet.infura.io/af0ac1adf1794a61a7458d6409c4c122",
+//                network: .ropsten,
+//                nodeEndpoint: "https://ropsten.infura.io/af0ac1adf1794a61a7458d6409c4c122",
                 etherscanAPIKey: "XE7QVJNVMKJT75ATEPY1HPWTPYCVCKMMJ7",
                 debugPrints: true
             )

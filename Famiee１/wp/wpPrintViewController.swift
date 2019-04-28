@@ -147,7 +147,13 @@ class wpPrintViewController: UIViewController {
             // UIAlertController を表示
             self.present(alert, animated: true, completion: nil)
         }
-        
+    
+    @IBAction func done(_ sender: Any) {
+        let appDomain = Bundle.main.bundleIdentifier
+        UserDefaults.standard.removePersistentDomain(forName: appDomain!)
+    }
+    
+  
         
 }
 
