@@ -38,7 +38,7 @@ class checkSignViewController: UIViewController {
         let key = randomString(length: 16)
         let iv = "0000000000000000"
 //        let iv:[UInt8] = AES.randomIV(AES.blockSize)
-        let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0b0c0d0e0f"))
+        let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0a0c0d0e0f"))
         
         let seed = try! Mnemonic.createSeed(mnemonic: mnemonic)
         
@@ -110,7 +110,7 @@ class checkSignViewController: UIViewController {
                     print(data)
 
                     
-                    let rawTransaction = RawTransaction(wei: "100", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 120000, nonce: nonce, data: data!)
+                    let rawTransaction = RawTransaction(wei: "0", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 120000, nonce: nonce, data: data!)
 
                     let tx: String
                     do {
@@ -164,7 +164,7 @@ class checkSignViewController: UIViewController {
                     let data: Data? =  self.cipher.data(using: .utf8)
                     print(data)
 
-                    let rawTransaction = RawTransaction(wei: "100", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 120000, nonce: nonce, data: data!)
+                    let rawTransaction = RawTransaction(wei: "0", to: address, gasPrice: Converter.toWei(GWei: 10), gasLimit: 120000, nonce: nonce, data: data!)
 
                     let tx: String
                     do {
