@@ -9,6 +9,7 @@
 import UIKit
 import EthereumKit
 import CryptoSwift
+import Reachability
 
 class checkSignViewController: UIViewController {
 
@@ -24,7 +25,24 @@ class checkSignViewController: UIViewController {
 
         let image = UserDefaults.standard.object(forKey: "box")
         Cer.image = UIImage(data: image as! Data)
+        let reachability = Reachability.forInternetConnection()
         
+        // インターネット接続中なら通常の処理
+        if reachability!.isReachable()
+        {
+            // 通常の画面に必要なビューを追加したり
+            // データを取得したり
+        }
+            // インターネット接続なし
+        else
+        {
+            let title = "ネットワークエラー"
+            let message = "接続に失敗しました"
+            
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
         
     }
     
@@ -117,6 +135,12 @@ class checkSignViewController: UIViewController {
                         tx = try wallet.sign(rawTransaction: rawTransaction)
                     } catch let error {
                         fatalError("Error: \(error.localizedDescription)")
+                        let title = "エラー\(error.localizedDescription)"
+                        let message = "保存に失敗しました"
+                        
+                        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
 
                     geth.sendRawTransaction(rawTransaction: tx) {result in
@@ -125,16 +149,11 @@ class checkSignViewController: UIViewController {
                             print(transaction.id)
                             UserDefaults.standard.set(transaction.id, forKey: "TxID")
                         case .failure(_):
-                            print("署名ができていない遅れていない")
                             let title = "エラー"
                             let message = "保存に失敗しました"
                             
                             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-                            
-                            // OKボタンを追加
                             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                            
-                            // UIAlertController を表示
                             self.present(alert, animated: true, completion: nil)
                         }
                     }

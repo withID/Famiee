@@ -10,5 +10,6 @@ target 'Famiee１' do
   pod 'ACEDrawingView'
   pod 'RSKImageCropper'
   pod 'lottie-ios'
+  pod 'Reachability'
 
 end

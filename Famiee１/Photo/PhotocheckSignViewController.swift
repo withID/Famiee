@@ -11,7 +11,8 @@
 import UIKit
 import EthereumKit
 import CryptoSwift
-    
+import Reachability
+
     class PhotocheckSignViewController: UIViewController {
         
         @IBOutlet var Cer: UIImageView!
@@ -24,9 +25,33 @@ import CryptoSwift
             
             let image = UserDefaults.standard.object(forKey: "box")
             Cer.image = UIImage(data: image as! Data)
+            let reachability = Reachability.forInternetConnection()
             
-            
+            // インターネット接続中なら通常の処理
+            if reachability!.isReachable()
+            {
+                // 通常の画面に必要なビューを追加したり
+                // データを取得したり
+            }
+                // インターネット接続なし
+            else
+            {
+                let title = "ネットワークエラー"
+                let message = "接続に失敗しました"
+                
+                let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        
         }
+        
+        // 再読み込みボタンがおされたら再描画
+        func onRefresh(sender: UIButton)
+        {
+            self.viewDidLoad()
+        }
+        
         
         func randomString(length: Int) -> String {
             let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
