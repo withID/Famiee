@@ -62,7 +62,7 @@ import Reachability
             
             let key = randomString(length: 16)
             let iv = "0000000000000000"
-            let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0a0c0d0e0f"))
+            let mnemonic = Mnemonic.create(entropy: Data(hex: "044102030405060708090a0b0c0d0e0f"))
             
             let seed = try! Mnemonic.createSeed(mnemonic: mnemonic)
             
